@@ -1,5 +1,5 @@
 // const URL = 'http://localhost:3001'
-const URL = 'https://ecommstore2019.herokuapp.com/'
+const URL = 'https://ecommstore2019.herokuapp.com'
 
 export default {
   target: 'static',
@@ -66,11 +66,10 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     proxy: true,
-    baseURL: URL
   },
 
   proxy: {
-    '/api': URL
+    '/api/': `${URL}/api`
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
