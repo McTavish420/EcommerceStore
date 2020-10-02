@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/verify/_token", {data:[{}],fetch:[],mutations:[]});
