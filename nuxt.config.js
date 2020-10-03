@@ -77,7 +77,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extend(config, ctx) { },
+    // extend(config, ctx) { },
   },
 
   auth: {
@@ -90,6 +90,11 @@ export default {
             propertyName: 'token'
           },
           logout: true,
+          user: {
+            url: 'https://ecommstore2019.herokuapp.com/api/auth/user',
+            method: 'get',
+            propertyName: 'user'
+          }
         }
       }
     }

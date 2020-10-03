@@ -4233,7 +4233,7 @@ const DEFAULTS = {
       },
       "logout": true,
       "user": {
-        "url": "/api/auth/user",
+        "url": "https://ecommstore2019.herokuapp.com/api/auth/user",
         "method": "get",
         "propertyName": "user"
       }
