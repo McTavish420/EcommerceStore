@@ -63,7 +63,7 @@ export default {
     layout: 'none',
     async asyncData ({ $axios, params, $router }) {
         try {
-            let response = await $axios.$post(`/api/auth/confirmation/${params.token}`)
+            let response = await $axios.$post(`https://ecommstore2019.herokuapp.com/api/auth/confirmation/${params.token}`)
             console.log('response', response.success);
             if (response.success) {
                 return {

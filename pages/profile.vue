@@ -81,7 +81,7 @@ export default {
             }
 
             try {
-                let response = await this.$axios.$put('/api/auth/user', data)
+                let response = await this.$axios.$put('https://ecommstore2019.herokuapp.com/api/auth/user', data)
                 if (response.success) {
                     this.userName = ''
                     this.email = ''

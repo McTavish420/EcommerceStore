@@ -141,7 +141,7 @@ export default {
 
   async asyncData ({ $axios, query }) {
     try {
-      let products = await $axios.$post('/api/search', { title: query.title })
+      let products = await $axios.$post('https://ecommstore2019.herokuapp.com/api/search', { title: query.title })
       return {
         products
       }

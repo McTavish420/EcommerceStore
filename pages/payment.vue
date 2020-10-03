@@ -116,7 +116,7 @@ export default {
     async onPurchase () {
       try {
         let token = await this.stripe.createToken(this.card)
-        let response = await this.$axios.$post('/api/payment/pay', {
+        let response = await this.$axios.$post('https://ecommstore2019.herokuapp.com/api/payment/pay', {
         token: token,
         totalPrice: this.getCartTotalPriceWithTotalPrice,
         cart: this.getCart,

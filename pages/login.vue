@@ -84,6 +84,7 @@ export default {
     methods: {
         async onLogIn () {
             try {
+                console.log(this.$auth);
 
                 await this.$auth.loginWith('local', {
                     data: {

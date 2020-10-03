@@ -148,7 +148,7 @@
 export default {
   async asyncData ({ $axios }) {
     try {
-      let response = await $axios.$get('/api/orders')
+      let response = await $axios.$get('https://ecommstore2019.herokuapp.com/api/orders')
 
       if (response.success) {
         return {

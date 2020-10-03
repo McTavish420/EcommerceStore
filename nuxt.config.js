@@ -1,26 +1,26 @@
 // const URL = 'http://localhost:3001'
 const URL = 'https://ecommstore2019.herokuapp.com/'
 export default {
-  ssr: false,
+  ssr: true,
   generate: {
-    // routes: [
-    //   '/',
-    //   '/signup',
-    //   '/search',
-    //   '/profile',
-    //   '/placeorder',
-    //   '/payment',
-    //   '/orders',
-    //   '/login',
-    //   '/cart',
-    //   '/verify/_token',
-    //   '/reviews/_id',
-    //   '/products/_id',
-    //   '/address/_id',
-    //   '/address/add',
-    //   '/address/'
-    // ],
-    fallback: 'index.html'
+    routes: [
+      '/',
+      '/signup',
+      '/search',
+      '/profile',
+      '/placeorder',
+      '/payment',
+      '/orders',
+      '/login',
+      '/cart',
+      '/verify/_token',
+      '/reviews/_id',
+      '/products/_id',
+      '/address/_id',
+      '/address/add',
+      '/address/'
+    ],
+    // fallback: 'index.html'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -85,6 +85,8 @@ export default {
       local: {
         endpoints: {
           login: {
+            url: 'https://ecommstore2019.herokuapp.com/api/auth/login',
+            method: 'post',
             propertyName: 'token'
           },
           logout: true,

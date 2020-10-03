@@ -176,7 +176,7 @@
 export default {
   async asyncData ({ $axios }) {
     try {
-      let response = await $axios.$get('/api/addresses/get/countries')
+      let response = await $axios.$get('https://ecommstore2019.herokuapp.com/api/addresses/get/countries')
 
       if (response.success) {
         return {
@@ -216,7 +216,7 @@ export default {
           securityCode: this.securityCode
         }
 
-        let response = await this.$axios.$post('/api/addresses', data)
+        let response = await this.$axios.$post('https://ecommstore2019.herokuapp.com/api/addresses', data)
         if (response.success) {
           this.$router.push('/address')
         }

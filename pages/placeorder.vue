@@ -377,7 +377,7 @@ export default {
 
   async asyncData ({ $axios, store }) {
     try {
-      let response = await $axios.$post('/api/payment/shipment', {
+      let response = await $axios.$post('https://ecommstore2019.herokuapp.com/api/payment/shipment', {
         shipment: 'normal'
       })
 
@@ -402,7 +402,7 @@ export default {
   methods: {
     async onChooseShipping (shipment) {
       try {
-      let response = await this.$axios.$post('/api/payment/shipment', {
+      let response = await this.$axios.$post('https://ecommstore2019.herokuapp.com/api/payment/shipment', {
         shipment: shipment
       })
 

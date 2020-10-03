@@ -376,9 +376,9 @@ export default {
   },
   async asyncData ({ $axios, params }) {
     try {
-      let singleProduct = $axios.$get(`/api/products/${params.id}`)
-      let manyReviews = $axios.$get(`/api/review/${params.id}`)
-      let shipments = $axios.$post('/api/payment/shipment', {
+      let singleProduct = $axios.$get(`https://ecommstore2019.herokuapp.com/api/products/${params.id}`)
+      let manyReviews = $axios.$get(`https://ecommstore2019.herokuapp.com/api/review/${params.id}`)
+      let shipments = $axios.$post('https://ecommstore2019.herokuapp.com/api/payment/shipment', {
         shipment: 'normal'
       })
 

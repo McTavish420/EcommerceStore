@@ -100,7 +100,7 @@
 export default {
   async asyncData ({ $axios }) {
     try {
-      let response = await $axios.$get('/api/addresses')
+      let response = await $axios.$get('https://ecommstore2019.herokuapp.com/api/addresses')
       if (response.success) {
         return {
           addresses: response.addresses
@@ -120,7 +120,7 @@ export default {
   methods: {
     async onDeleteAddress (id, index) {
       try {
-        let response = await this.$axios.$delete(`/api/addresses/${id}`)
+        let response = await this.$axios.$delete(`https://ecommstore2019.herokuapp.com/api/addresses/${id}`)
         if (response.success) {
           this.message = response.message
           this.addresses.splice(index, 1)
@@ -132,7 +132,7 @@ export default {
 
     async onSetDefault (id) {
       try {
-        let response = await this.$axios.$put('/api/addresses/set/default', { id: id })
+        let response = await this.$axios.$put('https://ecommstore2019.herokuapp.com/api/addresses/set/default', { id: id })
         if (response.success) {
           this.message = response.message
           await this.$auth.fetchUser()

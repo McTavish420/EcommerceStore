@@ -102,7 +102,7 @@ export default {
                     password: this.password
                 }
 
-                let response = await this.$axios.$post('/api/auth/signup', data)
+                let response = await this.$axios.$post('https://ecommstore2019.herokuapp.com/api/auth/signup', data)
                 console.log(response)
 
                 if (response.success) {
