@@ -2,7 +2,7 @@
 const URL = 'https://ecommstore2019.herokuapp.com'
 
 export default {
-  mode: 'spa',
+  ssr: false,
   generate: {
     routes: [
       '/',
