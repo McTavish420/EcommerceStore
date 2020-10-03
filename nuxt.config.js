@@ -2,7 +2,7 @@
 const URL = 'https://ecommstore2019.herokuapp.com'
 
 export default {
-  ssr: false,
+  ssr: true,
   generate: {
     routes: [
       '/',
@@ -21,7 +21,7 @@ export default {
       '/address/add',
       '/address/'
     ],
-    fallback: true
+    // fallback: true
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -37,6 +37,9 @@ export default {
       { rel: 'stylesheet', href: '/css/font-awesome/css/all.css' },
       { rel: 'stylesheet', href: '/css/default.css' }
     ]
+  },
+  env: {
+    backendUrl: URL
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -67,10 +70,11 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     proxy: true,
+    baseURL: URL
   },
 
   proxy: {
-    '/api/': `${URL}/api`
+    '/api': URL
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

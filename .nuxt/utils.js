@@ -150,7 +150,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"backendUrl":"https://ecommstore2019.herokuapp.com"}
     }
     // Only set once
     if (!process.static && context.req) {
