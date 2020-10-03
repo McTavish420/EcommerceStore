@@ -2,7 +2,7 @@
 const URL = 'https://ecommstore2019.herokuapp.com'
 
 export default {
-  target: 'static',
+  mode: 'spa',
   generate: {
     routes: [
       '/',
@@ -20,7 +20,8 @@ export default {
       '/address/_id',
       '/address/add',
       '/address/'
-    ]
+    ],
+    fallback: true
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
