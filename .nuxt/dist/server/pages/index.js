@@ -42,14 +42,16 @@ module.exports.__inject__ = function (context) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/FeaturedProduct.vue?vue&type=template&id=5ebbfa7e&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mainContent"},[_vm._ssrNode("<div class=\"unified_widget pageBanner my-5\"><h1>Books</h1> <p><b>\n        Browse for more books\n        <a href=\"#\">leaders of notable people</a>, or\n        <a href=\"#\">Fantasy Books</a> like harry potter or Game of Thrones\n        <a href=\"#\">Best Fantasy books of the year so far</a></b></p></div> <div class=\"bx-root\"><div class=\"row\"><div class=\"col-sm-5 text-center\"><div class=\"bx-root-image cover-product\"><img src=\"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ad8fbc8-aee8-4e92-a04b-6abf7a036a51/dbuk2g0-82c04ba5-46eb-445e-adc5-2827369eddbe.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOWFkOGZiYzgtYWVlOC00ZTkyLWEwNGItNmFiZjdhMDM2YTUxXC9kYnVrMmcwLTgyYzA0YmE1LTQ2ZWItNDQ1ZS1hZGM1LTI4MjczNjllZGRiZS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.FC1AYC6v7zuoaKw4nHwKS0zcNWIAGT9merwjyt_WmZg\" class=\"img-fluid\"></div></div> <div class=\"col-sm-7 m-auto\"><div class=\"bx-root-dtls\"><div class=\"bx-root-heading\">The Program</div></div> <div class=\"bx-root-subtext\">\n          It is a great Anime, inside the mind of a great Author\n        </div> <div class=\"bx-root-link\"><span>Order Now</span></div></div></div></div>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/FeaturedProduct.vue?vue&type=template&id=23cad9ee&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mainContent"},[_vm._ssrNode("<div class=\"unified_widget pageBanner my-5\"><h1>Comic Books</h1> <p><b>\n        Browse for more Manga\n        <a href=\"#\">JoJo no Kimyou na Bouken</a>, or\n        <a href=\"#\">Comic Books</a> like DC Comics or Marvel Comics\n        <a href=\"#\">Best Comic books of the year so far</a></b></p></div> <div class=\"bx-root\"><div class=\"row\"><div class=\"col-sm-5 text-center\"><div class=\"bx-root-image cover-product\"><img src=\"https://cdn.animenewsnetwork.com/hotlink/thumbnails/max700x700/cms/news/102888/one-piece-zou-visual.jpeg\" class=\"img-fluid\"></div></div> <div class=\"col-sm-7 m-auto\"><div class=\"bx-root-dtls\"><div class=\"bx-root-heading\">One Piece</div></div> <div class=\"bx-root-subtext\">\n          Gol D. Roger, a man referred to as the &quot;Pirate King,&quot; is set to be executed by the World Government.\n           But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known as the Grand Line.\n           Announcing that One Piece can be claimed by anyone worthy enough to reach it, the Pirate King is executed and the Great Age of Pirates begins.\n        </div> <div class=\"bx-root-link\"><span>Order Now</span></div></div></div></div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/FeaturedProduct.vue?vue&type=template&id=5ebbfa7e&
+// CONCATENATED MODULE: ./components/FeaturedProduct.vue?vue&type=template&id=23cad9ee&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/FeaturedProduct.vue?vue&type=script&lang=js&
+//
+//
 //
 //
 //

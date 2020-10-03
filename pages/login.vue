@@ -91,9 +91,7 @@ export default {
                         password: this.password
                     }
                 })
-                console.log(this.$auth);
                 await this.$auth.fetchUser()
-                console.log('user: \n', this.$auth.fetchUser());
                 await this.$store.dispatch('setLoggedUser')
                 
                 this.$router.push('/')
