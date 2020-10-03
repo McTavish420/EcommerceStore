@@ -69,9 +69,11 @@ export default {
     baseURL: URL
   },
 
-  // proxy: {
-  //   '/api': URL
-  // },
+  proxy: {
+    '/api': {
+      target: URL
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
