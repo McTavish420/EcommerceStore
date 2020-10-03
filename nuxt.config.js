@@ -38,9 +38,6 @@ export default {
       { rel: 'stylesheet', href: '/css/default.css' }
     ]
   },
-  env: {
-    backendUrl: URL
-  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
@@ -74,7 +71,10 @@ export default {
   },
 
   proxy: {
-    '/api': URL
+    '/api': {
+      target: URL,
+      pathRewrite: { '^/api': `.netlify/functions/api` }
+    }
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
