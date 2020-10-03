@@ -1,27 +1,26 @@
 // const URL = 'http://localhost:3001'
-const URL = 'https://ecommstore2019.herokuapp.com'
-
+const URL = 'https://ecommstore2019.herokuapp.com/'
 export default {
-  ssr: true,
+  ssr: false,
   generate: {
-    routes: [
-      '/',
-      '/signup',
-      '/search',
-      '/profile',
-      '/placeorder',
-      '/payment',
-      '/orders',
-      '/login',
-      '/cart',
-      '/verify/_token',
-      '/reviews/_id',
-      '/products/_id',
-      '/address/_id',
-      '/address/add',
-      '/address/'
-    ],
-    // fallback: true
+    // routes: [
+    //   '/',
+    //   '/signup',
+    //   '/search',
+    //   '/profile',
+    //   '/placeorder',
+    //   '/payment',
+    //   '/orders',
+    //   '/login',
+    //   '/cart',
+    //   '/verify/_token',
+    //   '/reviews/_id',
+    //   '/products/_id',
+    //   '/address/_id',
+    //   '/address/add',
+    //   '/address/'
+    // ],
+    fallback: 'index.html'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -71,10 +70,7 @@ export default {
   },
 
   proxy: {
-    '/api': {
-      target: URL,
-      pathRewrite: { '^/api': `.netlify/functions/api` }
-    }
+    '/api': URL
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
