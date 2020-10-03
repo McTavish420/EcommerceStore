@@ -84,7 +84,6 @@ export default {
     methods: {
         async onLogIn () {
             try {
-                console.log(this.$auth);
 
                 await this.$auth.loginWith('local', {
                     data: {
@@ -92,8 +91,10 @@ export default {
                         password: this.password
                     }
                 })
-                this.$store.dispatch('setLoggedUser')
+                console.log(this.$auth);
                 await this.$auth.fetchUser()
+                await this.$store.dispatch('setLoggedUser')
+                
                 this.$router.push('/')
 
             } catch (error) {
