@@ -113,7 +113,7 @@
                       </span>
                     </div>
                     <div class="a-row">
-                      <span class="a-size-mini a-color-secondary">Sold by: Amazon Export Sales LLC</span>
+                      <span class="a-size-mini a-color-secondary">Sold by: Ecommerce Store</span>
                     </div>
                     <div class="a-row">
                       <!-- Product quantity -->
