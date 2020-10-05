@@ -211,7 +211,7 @@
                                  @change="onChooseShipping('normal')"/>
                           <span class="a-radio-label">
                             <span class="a-color-success">
-                              <strong>Averages 7 business days</strong>
+                              <strong>Averages 14 business days</strong>
                             </span>
                             <br />
                             <span
@@ -227,7 +227,7 @@
                                  @change="onChooseShipping('fast')"/>
                           <span class="a-radio-label">
                             <span class="a-color-success">
-                              <strong>Averages 3 business days</strong>
+                              <strong>Averages 4 business days</strong>
                             </span>
                             <br />
                             <span class="a-color-secondary">$49.98&nbsp;-&nbsp;Shipping</span>
