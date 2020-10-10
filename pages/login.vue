@@ -85,13 +85,12 @@ export default {
         async onLogIn () {
             try {
 
-                await this.$auth.loginWith('local', {
+                let response = await this.$auth.loginWith('local', {
                     data: {
                         email: this.email,
                         password: this.password
                     }
                 })
-                await this.$auth.fetchUser()
                 await this.$store.dispatch('setLoggedUser')
                 
                 this.$router.push('/')

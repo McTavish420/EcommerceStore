@@ -51,12 +51,12 @@ module.exports = exports;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/verify/_token.vue?vue&type=template&id=201fcda6&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/verify/_token.vue?vue&type=template&id=5e47fe20&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"registerPage"},[_vm._ssrNode("<div class=\"container\">","</div>",[_vm._ssrNode("<div class=\"row\">","</div>",[_vm._ssrNode("<div class=\"col-sm-4 mx-auto my-5\">","</div>",[_vm._ssrNode("<div class=\"text-center\">","</div>",[_c('nuxt-link',{attrs:{"to":"/"}},[_c('img',{attrs:{"src":"/img/ECOM.png"}})])],1),_vm._ssrNode(" "),_vm._ssrNode("<form class=\"mt-4\">","</form>",[_vm._ssrNode("<div class=\"a-box a-spacing-extra-larger\">","</div>",[_vm._ssrNode("<div class=\"a-box-inner\">","</div>",[_vm._ssrNode("<h1 class=\"a-spacing-small text-center\">Sign In</h1> <div class=\"a-row a-spacing-base\"><label for=\"ap_customer_name\" class=\"a-form-label\">Email</label> <input type=\"email\" id=\"ap_customer_name\""+(_vm._ssrAttr("value",(_vm.email)))+" class=\"a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info\"></div> "+((_vm.verified)?("<div class=\"a-row a-spacing-extra-large mb-4\"><div class=\"a-button-primary text-center justify-center\"><span class=\"a-button-inner\"><span class=\"a-button-text\">Continue</span></span></div> <div class=\"a-row a-spacing-top-medium a-size-small text-secondary\"><b>\n                                        By creating account you agree to our\n                                        <a href=\"#\">Terms &amp; Conditions</a> and\n                                        <a href=\"#\">Privacy Notice</a>.\n                                    </b></div></div>"):"<!---->")+" <hr> "),_vm._ssrNode("<div class=\"a-row\">","</div>",[_vm._ssrNode("<b>","</b>",[_vm._ssrNode("\n                                    Don't have an account?\n                                    "),_c('nuxt-link',{staticClass:"a-link-emphasis",attrs:{"to":"/signup"}},[_vm._v("Sign Up")])],2)])],2)])])],2)])])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/verify/_token.vue?vue&type=template&id=201fcda6&
+// CONCATENATED MODULE: ./pages/verify/_token.vue?vue&type=template&id=5e47fe20&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/verify/_token.vue?vue&type=script&lang=js&
 //
@@ -128,7 +128,7 @@ var staticRenderFns = []
     $router
   }) {
     try {
-      let response = await $axios.$post(`https://ecommstore2019.herokuapp.com/api/auth/confirmation/${params.token}`);
+      let response = await $axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/auth/confirmation/${params.token}`);
       console.log('response', response.success);
 
       if (response.success) {

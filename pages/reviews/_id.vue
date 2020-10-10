@@ -106,12 +106,13 @@
 <script>
 const rating = process.client ? require('vue-rate-it') : {}
 export default {
+  middleware: 'auth',
   components: {
     StarRating: rating.StarRating
   },
   async asyncData ({ $axios, params }) {
     try {
-      let response = await $axios.$get(`https://ecommstore2019.herokuapp.com/api/products/${params.id}`)
+      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${params.id}`)
 
       return {
         product: response.product
@@ -145,7 +146,7 @@ export default {
         data.append('rating', this.rating)
         data.append('photo', this.selectedFile, this.selectedFile.name)
 
-        let response = await this.$axios.$post(`https://ecommstore2019.herokuapp.com/api/review/${this.$route.params.id}`, data)
+        let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/review/${this.$route.params.id}`, data)
 
         if (response.success) {
           this.$router.push(`/products/${this.$route.params.id}`)

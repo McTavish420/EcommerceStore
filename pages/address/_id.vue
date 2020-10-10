@@ -193,10 +193,11 @@
 
 <script>
 export default {
+  middleware: 'auth',
   async asyncData ({ $axios, params }) {
     try {
-      let getCountries = $axios.$get('https://ecommstore2019.herokuapp.com/api/addresses/get/countries')
-      let getAddress = $axios.$get(`https://ecommstore2019.herokuapp.com/api/addresses/${params.id}`)
+      let getCountries = $axios.$get(`${process.env.DEV_BACKEND}/api/addresses/get/countries`)
+      let getAddress = $axios.$get(`${process.env.DEV_BACKEND}/api/addresses/${params.id}`)
 
       let [countriesResponse, 
              addressResponse] = await Promise.all([
@@ -241,7 +242,7 @@ export default {
           securityCode: this.securityCode
         }
 
-        let response = await this.$axios.$put(`https://ecommstore2019.herokuapp.com/api/addresses/${id}`, data)
+        let response = await this.$axios.$put(`${process.env.DEV_BACKEND}/api/addresses/${id}`, data)
         if (response.success) {
           this.$router.push('/address')
         }

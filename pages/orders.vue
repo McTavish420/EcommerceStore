@@ -146,9 +146,10 @@
 
 <script>
 export default {
+  middleware: 'auth',
   async asyncData ({ $axios }) {
     try {
-      let response = await $axios.$get('https://ecommstore2019.herokuapp.com/api/orders')
+      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/orders`)
 
       if (response.success) {
         return {

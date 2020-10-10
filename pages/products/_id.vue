@@ -376,9 +376,9 @@ export default {
   },
   async asyncData ({ $axios, params }) {
     try {
-      let singleProduct = $axios.$get(`https://ecommstore2019.herokuapp.com/api/products/${params.id}`)
-      let manyReviews = $axios.$get(`https://ecommstore2019.herokuapp.com/api/review/${params.id}`)
-      let shipments = $axios.$post('https://ecommstore2019.herokuapp.com/api/payment/shipment', {
+      let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${params.id}`)
+      let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${params.id}`)
+      let shipments = $axios.$post(`${process.env.DEV_BACKEND}/api/payment/shipment`, {
         shipment: 'normal'
       })
 
@@ -395,7 +395,25 @@ export default {
         estimatedDelivery: shipmentResponse.shipment.estimated
       }
     } catch (error) {
-      console.log(error);
+      console.log('something went wrong');
+      console.log('failed to try\n', error);
+    }
+  },
+
+  data () {
+    return {
+      product: {
+        category: {},
+        owner: {},
+        title: '',
+        description: '',
+        photo: '',
+        price: 0,
+        stockQuantity: 0,
+        reviews: []
+      },
+      reviews: [],
+      estimatedDelivery: {}
     }
   },
 

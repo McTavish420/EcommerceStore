@@ -145,7 +145,7 @@ export default {
 
   async asyncData ({ $axios }) {
     try {
-      let response = await $axios.$get('https://ecommstore2019.herokuapp.com/api/products')
+      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products`)
       return {
         products: response.products,
       }

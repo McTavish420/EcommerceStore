@@ -373,11 +373,12 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
+  middleware: 'auth',
   layout: "none",
 
   async asyncData ({ $axios, store }) {
     try {
-      let response = await $axios.$post('https://ecommstore2019.herokuapp.com/api/payment/shipment', {
+      let response = await $axios.$post(`${process.env.DEV_BACKEND}/api/payment/shipment`, {
         shipment: 'normal'
       })
 
@@ -402,7 +403,7 @@ export default {
   methods: {
     async onChooseShipping (shipment) {
       try {
-      let response = await this.$axios.$post('https://ecommstore2019.herokuapp.com/api/payment/shipment', {
+      let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/payment/shipment`, {
         shipment: shipment
       })
 

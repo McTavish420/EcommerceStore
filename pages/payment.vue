@@ -88,6 +88,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
+  middleware: 'auth',
   layout: 'none',
   data () {
     return {
@@ -106,7 +107,7 @@ export default {
   },
 
   mounted () {
-    this.stripe = Stripe('pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL')
+    this.stripe = Stripe(process.env.STRIPE)
     let elements = this.stripe.elements()
     this.card = elements.create('card')
     this.card.mount(this.$refs.card)
@@ -116,7 +117,7 @@ export default {
     async onPurchase () {
       try {
         let token = await this.stripe.createToken(this.card)
-        let response = await this.$axios.$post('https://ecommstore2019.herokuapp.com/api/payment/pay', {
+        let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/payment/pay`, {
         token: token,
         totalPrice: this.getCartTotalPriceWithTotalPrice,
         cart: this.getCart,

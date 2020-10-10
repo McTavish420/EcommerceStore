@@ -1,5 +1,4 @@
-// const URL = 'http://localhost:3001'
-const URL = 'https://ecommstore2019.herokuapp.com/'
+
 export default {
   ssr: true,
   generate: {
@@ -20,7 +19,7 @@ export default {
       '/address/add',
       '/address/'
     ],
-    // fallback: 'index.html'
+    fallback: 'index.html'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -66,7 +65,7 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     proxy: true,
-    baseURL: URL
+    baseURL: process.env.DEV_BACKEND
   },
 
   proxy: {
@@ -85,19 +84,27 @@ export default {
       local: {
         endpoints: {
           login: {
-            url: 'https://ecommstore2019.herokuapp.com/api/auth/login',
+            url: `https://ecommstore2019.herokuapp.com/api/auth/login`,
             method: 'post',
             propertyName: 'token'
           },
           logout: true,
           user: {
-            url: 'https://ecommstore2019.herokuapp.com/api/auth/user',
+            url: `https://ecommstore2019.herokuapp.com/api/auth/user`,
             method: 'get',
             propertyName: 'user'
           }
-        }
+          // user: false
+        },
+        // autoFetchUser: false
       }
     }
+  },
+
+  env: {
+    DEV_BACKEND: 'https://ecommstore2019.herokuapp.com',
+    // DEV_BACKEND: 'http://localhost:3001',
+    STRIPE: 'pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL',
   },
 
   
