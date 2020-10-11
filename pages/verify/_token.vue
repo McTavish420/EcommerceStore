@@ -79,7 +79,8 @@ export default {
     data () {
         return {
             email: '',
-            password: ''
+            password: '',
+            verified: false
         }
     },
 
