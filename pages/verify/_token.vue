@@ -10,15 +10,16 @@
                     <form class="mt-4">
                         <div class="a-box a-spacing-extra-larger">
                             <div class="a-box-inner">
-                                <h1 class="a-spacing-small text-center">Sign In</h1>
+                                <h1 class="a-spacing-small text-center">Confirmation</h1>
 
                                 <!-- Email Field -->
                                 <div class="a-row a-spacing-base">
-                                    <label for="ap_customer_name" class="a-form-label">Email</label>
-                                    <input type="email"
-                                     id="ap_customer_name" 
-                                     class="a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info"
-                                     v-model="email">
+                                    <label for="ap_customer_name" class="a-form-label">
+                                        Please click <p class="text-success font-weight-bolder">Continue</p> below to confirm sign up
+                                    </label>
+                                    <label for="ap_customer_name" class="a-form-label">
+                                        Then you can Sign In.
+                                    </label>
                                 </div>
 
                                 

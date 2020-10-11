@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/_id","11":"pages/profile","12":"pages/reviews/_id","13":"pages/search","14":"pages/signup","15":"pages/verify/_token"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/_id","11":"pages/profile","12":"pages/reviews/_id","13":"pages/search","14":"pages/signup","15":"pages/verify/_token","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -2163,35 +2163,37 @@ if (false) {}
 
 
 
-const _ed8b1148 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/index */ 3).then(__webpack_require__.bind(null, 68)));
+const _ed8b1148 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/index */ 3).then(__webpack_require__.bind(null, 71)));
 
-const _f74c9bc4 = () => interopDefault(__webpack_require__.e(/* import() | pages/cart */ 4).then(__webpack_require__.bind(null, 69)));
+const _f74c9bc4 = () => interopDefault(__webpack_require__.e(/* import() | pages/cart */ 4).then(__webpack_require__.bind(null, 72)));
 
-const _d35f844a = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 6).then(__webpack_require__.bind(null, 70)));
+const _d35f844a = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 6).then(__webpack_require__.bind(null, 73)));
 
-const _66b8a43a = () => interopDefault(__webpack_require__.e(/* import() | pages/orders */ 7).then(__webpack_require__.bind(null, 71)));
+const _66b8a43a = () => interopDefault(__webpack_require__.e(/* import() | pages/orders */ 7).then(__webpack_require__.bind(null, 74)));
 
-const _50058910 = () => interopDefault(__webpack_require__.e(/* import() | pages/payment */ 8).then(__webpack_require__.bind(null, 72)));
+const _50058910 = () => interopDefault(__webpack_require__.e(/* import() | pages/payment */ 8).then(__webpack_require__.bind(null, 75)));
 
-const _6bc4f1a5 = () => interopDefault(__webpack_require__.e(/* import() | pages/placeorder */ 9).then(__webpack_require__.bind(null, 73)));
+const _6bc4f1a5 = () => interopDefault(__webpack_require__.e(/* import() | pages/placeorder */ 9).then(__webpack_require__.bind(null, 76)));
 
-const _3e65099b = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 74)));
+const _3e65099b = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 77)));
 
-const _74299726 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 75)));
+const _74299726 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 78)));
 
-const _ffdd2ad4 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 76)));
+const _ffdd2ad4 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 79)));
 
-const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 77)));
+const _7bf3b1aa = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/index */ 16).then(__webpack_require__.bind(null, 80)));
 
-const _c712be78 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 78)));
+const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 81)));
 
-const _3beab948 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/_id */ 10).then(__webpack_require__.bind(null, 79)));
+const _c712be78 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 82)));
 
-const _78dcf706 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/_id */ 12).then(__webpack_require__.bind(null, 80)));
+const _3beab948 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/_id */ 10).then(__webpack_require__.bind(null, 83)));
 
-const _048655f1 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/_token */ 15).then(__webpack_require__.bind(null, 81)));
+const _78dcf706 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/_id */ 12).then(__webpack_require__.bind(null, 84)));
 
-const _66aeca78 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 5).then(__webpack_require__.bind(null, 82))); // TODO: remove in Nuxt 3
+const _048655f1 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/_token */ 15).then(__webpack_require__.bind(null, 85)));
+
+const _66aeca78 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 5).then(__webpack_require__.bind(null, 86))); // TODO: remove in Nuxt 3
 
 
 const emptyFn = () => {};
@@ -2246,6 +2248,10 @@ const routerOptions = {
     component: _ffdd2ad4,
     name: "signup"
   }, {
+    path: "/verify",
+    component: _7bf3b1aa,
+    name: "verify"
+  }, {
     path: "/address/add",
     component: _048a47aa,
     name: "address-add"
@@ -2262,7 +2268,7 @@ const routerOptions = {
     component: _78dcf706,
     name: "reviews-id"
   }, {
-    path: "/verify/:token?",
+    path: "/verify/:token",
     component: _048655f1,
     name: "verify-token"
   }, {

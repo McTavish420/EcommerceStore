@@ -12,6 +12,7 @@ export default {
       '/orders',
       '/login',
       '/cart',
+      '/verify/',
       '/verify/_token',
       '/reviews/_id',
       '/products/_id',

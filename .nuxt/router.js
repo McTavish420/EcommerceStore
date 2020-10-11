@@ -12,6 +12,7 @@ const _6bc4f1a5 = () => interopDefault(import('..\\pages\\placeorder.vue' /* web
 const _3e65099b = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
 const _74299726 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages/search" */))
 const _ffdd2ad4 = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
+const _7bf3b1aa = () => interopDefault(import('..\\pages\\verify\\index.vue' /* webpackChunkName: "pages/verify/index" */))
 const _048a47aa = () => interopDefault(import('..\\pages\\address\\add.vue' /* webpackChunkName: "pages/address/add" */))
 const _c712be78 = () => interopDefault(import('..\\pages\\address\\_id.vue' /* webpackChunkName: "pages/address/_id" */))
 const _3beab948 = () => interopDefault(import('..\\pages\\products\\_id.vue' /* webpackChunkName: "pages/products/_id" */))
@@ -72,6 +73,10 @@ export const routerOptions = {
     component: _ffdd2ad4,
     name: "signup"
   }, {
+    path: "/verify",
+    component: _7bf3b1aa,
+    name: "verify"
+  }, {
     path: "/address/add",
     component: _048a47aa,
     name: "address-add"
@@ -88,7 +93,7 @@ export const routerOptions = {
     component: _78dcf706,
     name: "reviews-id"
   }, {
-    path: "/verify/:token?",
+    path: "/verify/:token",
     component: _048655f1,
     name: "verify-token"
   }, {

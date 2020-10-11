@@ -23,12 +23,12 @@
                     class="a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info"
                     v-model="userName"
                   />
-                  <div class="a-alert-container" v-if="nError">
+                  
+                  <div class="a-alert-container">
                     <div
-                      class="a-alert-content text-danger"
-                      style="font-weight: normal; font-size: 7"
+                      v-text="validateUsername()"
+                      :class="nError ? `text-danger` : `text-success`"
                     >
-                      {{ nameError }}
                     </div>
                   </div>
                 </div>
@@ -44,9 +44,10 @@
                     class="a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info"
                     v-model="email"
                   />
-                  <div class="a-alert-container" v-if="eError">
-                    <div class="a-alert-content text-danger">
-                      {{ emailError }}
+                  <div class="a-alert-container">
+                    <div
+                      v-text="checkEmail()" 
+                      :class="eError ? `text-danger` : `text-success`">
                     </div>
                   </div>
                   <div class="a-alert-container" v-if="eAvail">
@@ -70,23 +71,10 @@
                     class="a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info"
                     v-model="password"
                   />
-                  <div class="a-alert-container" v-if="pError">
-                    <div class="a-alert-content text-danger">
-                      {{ passError.head }}
-                      <ul
-                        class="text-danger"
-                        style="
-                          list-style-type: circle;
-                          font-weight: normal;
-                          font-size: 7;
-                        "
-                      >
-                        <li>{{ passError.lower }}</li>
-                        <li>{{ passError.upper }}</li>
-                        <li>{{ passError.digit }}</li>
-                        <li>{{ passError.special }}</li>
-                        <li>{{ passError.length }}</li>
-                      </ul>
+                  <div class="a-alert-container">
+                    <div
+                      v-text="checkPassword()" 
+                      :class="pError ? `text-danger` : `text-success`">
                     </div>
                   </div>
                 </div>
@@ -139,17 +127,7 @@ export default {
       userName: "",
       email: "",
       password: "",
-      nameError: "Username must be between 6 to 12 characters.",
-      emailError: "Enter an Email address that is in valid format.",
       emailAvail: "",
-      passError: {
-        head: "Password must contain",
-        lower: "at lease 1 lowercase letter",
-        upper: "at least 1 uppercase letter",
-        digit: "at least 1 numerical digit",
-        special: "at least 1 special character",
-        length: "at least 6 characters long.",
-      },
       eAvail: false,
       nError: false,
       eError: false,
@@ -158,6 +136,21 @@ export default {
   },
 
   methods: {
+      validateUsername () {
+          if (this.userName.length == 0) {
+              this.nError = true
+              return 'Username is Required'
+          } else if (this.userName.length >= 12) {
+              this.nError = true
+              return 'Username is too long'
+          } else if (this.userName.length <= 6) {
+              this.nError = true
+              return 'Username is too short'
+          } else {
+              this.nError = false
+              return 'Username seems OK'
+          }
+      },
     async onSignUp() {
       try {
         let data = {
@@ -177,61 +170,61 @@ export default {
           this.eAvail = false;
           this.emailAvail = "";
         }
-        let nSuccess = false;
-        let eSuccess = false;
-        let pSuccess = false;
-        if (!this.checkUserName(data.userName)) {
-          this.nError = true;
-        } else {
-          this.nError = false;
-          nSuccess = true;
-        }
-        if (!this.checkEmail(data.email)) {
-          this.eError = true;
-        } else {
-          this.eError = false;
-          eSuccess = true;
-        }
-        if (!this.checkPassword(data.password)) {
-          this.pError = true;
-        } else {
-          this.pError = false;
-          pSuccess = true;
-        }
 
-        if (nSuccess && eSuccess && pSuccess) {
+        if (!this.nError && !this.eError && !this.pError) {
           let response = await this.$axios.$post(
             `${process.env.DEV_BACKEND}/api/auth/signup`,
             data
           );
 
           if (response.success) {
-            this.$router.push("/");
+            this.$router.push("/verify");
           }
         }
       } catch (error) {
-        this.email = ""
-        this.password = ""
-        this.userName = ''
         this.nError = true
         this.pError = true;
         this.eError = true;
         console.log(error);
       }
     },
-    checkUserName(data) {
-      return data.length >= 6 && data.length <= 12;
+    checkEmail() {
+        let regex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/
+        if (!regex.test(this.email)) {
+            this.eError = true
+            return 'Enter a valid Email Address'
+        } else {
+            this.eError = false
+            return 'Email Address is OK'
+        }
     },
-    checkEmail(data) {
-      return data.includes("@" && ".com");
-    },
-    checkPassword(data) {
-      let letter = /[a-zA-z]+/;
+    checkPassword() {
+      let letter = /[a-z]+/;
       let upper = /[A-Z]+/;
       let number = /[0-9]+/;
       let special = /[-+_!@#$%^&*., ?]+/;
-      let str = letter.test(data) && number.test(data) && special.test(data);
-      return data.length >= 6 && str;
+      if (this.password.length == 0) {
+          this.pError = true
+          return 'Please Enter a strong Password'
+      } else if (this.password.length < 6) {
+          this.pError = true
+          return 'Password must contain at least 6 characters'
+      } else if (!letter.test(this.password)) {
+          this.pError = true
+          return 'Password must contain at least 1 lowercase letter'
+      } else if (!upper.test(this.password)) {
+          this.pError = true
+          return 'Password must contain at least 1 uppercase letter'
+      } else if (!number.test(this.password)) {
+          this.pError = true
+          return 'Password must contain at least 1 numerical digit'
+      } else if (!special.test(this.password)) {
+          this.pError = true
+          return 'Password must contain at least 1 special character like !@#$%'
+      } else {
+          this.pError = false
+          return 'Password is OK'
+      }
     },
   },
 };
