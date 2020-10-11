@@ -20,7 +20,6 @@ export default {
       '/address/add',
       '/address/'
     ],
-    fallback: '/'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
