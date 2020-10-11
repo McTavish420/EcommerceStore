@@ -815,9 +815,9 @@ const rating =  false ? undefined : {};
     params
   }) {
     try {
-      let singleProduct = $axios.$get(`${"http://localhost:3001"}/api/products/${params.id}`);
-      let manyReviews = $axios.$get(`${"http://localhost:3001"}/api/review/${params.id}`);
-      let shipments = $axios.$post(`${"http://localhost:3001"}/api/payment/shipment`, {
+      let singleProduct = $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/products/${params.id}`);
+      let manyReviews = $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/review/${params.id}`);
+      let shipments = $axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/payment/shipment`, {
         shipment: 'normal'
       });
       const [productResponse, reviewResponse, shipmentResponse] = await Promise.all([singleProduct, manyReviews, shipments]);

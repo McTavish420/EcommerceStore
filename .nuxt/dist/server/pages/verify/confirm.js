@@ -147,7 +147,7 @@ var staticRenderFns = []
     async onLogIn() {
       try {
         console.log('url params\n', this.$route.query.Authorization);
-        let response = await this.$axios.$post(`${"http://localhost:3001"}/api/auth/confirmation/${this.$route.query.Authorization}`);
+        let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/auth/confirmation/${this.$route.query.Authorization}`);
         console.log('response in confirmation', response.success);
 
         if (response.success) {

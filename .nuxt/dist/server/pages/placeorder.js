@@ -401,7 +401,7 @@ var external_vuex_ = __webpack_require__(4);
     store
   }) {
     try {
-      let response = await $axios.$post(`${"http://localhost:3001"}/api/payment/shipment`, {
+      let response = await $axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/payment/shipment`, {
         shipment: 'normal'
       });
       store.commit('setShipping', {
@@ -422,7 +422,7 @@ var external_vuex_ = __webpack_require__(4);
   methods: {
     async onChooseShipping(shipment) {
       try {
-        let response = await this.$axios.$post(`${"http://localhost:3001"}/api/payment/shipment`, {
+        let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/payment/shipment`, {
           shipment: shipment
         });
         this.$store.commit('setShipping', {

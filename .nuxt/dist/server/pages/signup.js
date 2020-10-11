@@ -176,7 +176,7 @@ var staticRenderFns = []
           email: this.email,
           password: this.password
         };
-        let response = await this.$axios.$post(`${"http://localhost:3001"}/api/auth/email`, data);
+        let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/auth/email`, data);
 
         if (!response.success) {
           this.eAvail = true;
@@ -188,7 +188,7 @@ var staticRenderFns = []
         }
 
         if (!this.nError && !this.eError && !this.pError) {
-          let response = await this.$axios.$post(`${"http://localhost:3001"}/api/auth/signup`, data);
+          let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/auth/signup`, data);
 
           if (response.success) {
             this.$router.push("/verify");

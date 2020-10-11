@@ -1538,7 +1538,7 @@ async function setContext(app, context) {
       error: context.error,
       base: '/',
       env: {
-        "DEV_BACKEND": "http://localhost:3001",
+        "DEV_BACKEND": "https://ecommstore2019.herokuapp.com",
         "STRIPE": "pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL"
       }
     }; // Only set once
@@ -4247,13 +4247,13 @@ const DEFAULTS = {
   $auth.registerStrategy('local', new LocalScheme($auth, {
     "endpoints": {
       "login": {
-        "url": "http://localhost:3001/api/auth/login",
+        "url": "https://ecommstore2019.herokuapp.com/api/auth/login",
         "method": "post",
         "propertyName": "token"
       },
       "logout": true,
       "user": {
-        "url": "http://localhost:3001/api/auth/user",
+        "url": "https://ecommstore2019.herokuapp.com/api/auth/user",
         "method": "get",
         "propertyName": "user"
       }

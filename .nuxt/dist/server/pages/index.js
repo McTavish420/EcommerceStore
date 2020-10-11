@@ -350,7 +350,7 @@ const rating =  false ? undefined : {};
     $axios
   }) {
     try {
-      let response = await $axios.$get(`${"http://localhost:3001"}/api/products`);
+      let response = await $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/products`);
       return {
         products: response.products
       };

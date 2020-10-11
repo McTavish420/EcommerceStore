@@ -87,15 +87,15 @@ export default {
       local: {
         endpoints: {
           login: {
-            // url: `https://ecommstore2019.herokuapp.com/api/auth/login`,
-            url: `http://localhost:3001/api/auth/login`,
+            url: `https://ecommstore2019.herokuapp.com/api/auth/login`,
+            // url: `http://localhost:3001/api/auth/login`,
             method: 'post',
             propertyName: 'token'
           },
           logout: true,
           user: {
-            // url: `https://ecommstore2019.herokuapp.com/api/auth/user`,
-            url: `http://localhost:3001/api/auth/user`,
+            url: `https://ecommstore2019.herokuapp.com/api/auth/user`,
+            // url: `http://localhost:3001/api/auth/user`,
             method: 'get',
             propertyName: 'user'
           }
@@ -107,8 +107,8 @@ export default {
   },
 
   env: {
-    // DEV_BACKEND: 'https://ecommstore2019.herokuapp.com',
-    DEV_BACKEND: 'http://localhost:3001',
+    DEV_BACKEND: 'https://ecommstore2019.herokuapp.com',
+    // DEV_BACKEND: 'http://localhost:3001',
     STRIPE: 'pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL',
   },
 

@@ -121,7 +121,7 @@ var staticRenderFns = []
     $axios
   }) {
     try {
-      let response = await $axios.$get(`${"http://localhost:3001"}/api/addresses`);
+      let response = await $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/addresses`);
 
       if (response.success) {
         return {
@@ -142,7 +142,7 @@ var staticRenderFns = []
   methods: {
     async onDeleteAddress(id, index) {
       try {
-        let response = await this.$axios.$delete(`${"http://localhost:3001"}/api/addresses/${id}`);
+        let response = await this.$axios.$delete(`${"https://ecommstore2019.herokuapp.com"}/api/addresses/${id}`);
 
         if (response.success) {
           this.message = response.message;
@@ -155,7 +155,7 @@ var staticRenderFns = []
 
     async onSetDefault(id) {
       try {
-        let response = await this.$axios.$put(`${"http://localhost:3001"}/api/addresses/set/default`, {
+        let response = await this.$axios.$put(`${"https://ecommstore2019.herokuapp.com"}/api/addresses/set/default`, {
           id: id
         });
 

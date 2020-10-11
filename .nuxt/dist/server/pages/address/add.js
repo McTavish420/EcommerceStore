@@ -197,7 +197,7 @@ var staticRenderFns = []
     $axios
   }) {
     try {
-      let response = await $axios.$get(`${"http://localhost:3001"}/api/addresses/get/countries`);
+      let response = await $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/addresses/get/countries`);
 
       if (response.success) {
         return {
@@ -237,7 +237,7 @@ var staticRenderFns = []
           deliveryInstructions: this.deliveryInstructions,
           securityCode: this.securityCode
         };
-        let response = await this.$axios.$post(`${"http://localhost:3001"}/api/addresses`, data);
+        let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/addresses`, data);
 
         if (response.success) {
           this.$router.push('/address');
