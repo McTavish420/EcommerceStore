@@ -27,7 +27,7 @@
                                  class="a-input-text" 
                                  style="width: 100%"
                                  v-model="email"
-                                 :placeholder="$auth.$state.user.email">
+                                 :placeholder="$store.getters.getUser.email">
                             </div>
 
                             <!-- Password Input -->
@@ -75,7 +75,7 @@ export default {
 
 
     methods: {
-        ...mapGetters(['getUserName']),
+        ...mapGetters(['getUserName', 'getUser']),
         async onUpdateProfile () {
             let data = {
                 userName: this.userName,

@@ -137,6 +137,7 @@ export default {
         if (response.success) {
           this.message = response.message
           await this.$auth.fetchUser()
+          await this.$store.dispatch('setLoggedUser')
         }
       } catch (error) {
         this.message = error.message

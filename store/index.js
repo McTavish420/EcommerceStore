@@ -7,6 +7,7 @@ export const state = () => ({
     shippingEstimatedDelivery: '',
     userName: '',
     city: '',
+    user: '',
     logStatus: false
 })
 
@@ -27,10 +28,12 @@ export const actions = {
     setLoggedUser ({ state, commit }) {
         let data = {
             name: '',
-            city: ''
+            city: '',
+            user: ''
         }
         if (state.auth.loggedIn) {
              data.name = state.auth.user.userName
+             data.user = state.auth.user
             if (state.auth.user.address === null || state.auth.user.address == undefined) {
                 data.city = 'Not Set Yet'
             } else {
@@ -119,6 +122,11 @@ export const mutations = {
 
 
     setTheUser (state, data ) {
+        if (data.user === null) {
+            state.user = ''
+        } else {
+            state.user = data.user
+        }
         if (data.name === null) {
             state.userName = ''
         } else {
@@ -136,6 +144,7 @@ export const mutations = {
     remove (state) {
         state.userName = '',
         state.city = '',
+        state.user = ''
         state.logStatus = false
     }
 
@@ -174,17 +183,18 @@ export const getters = {
     },
 
     getUserName (state) {
-        console.log('get name: ', state.userName);
         return state.userName
     },
 
     getCity (state) {
-        console.log('get city: ', state.city);
         return state.city
     },
 
+    getUser (state) {
+        return state.user
+    },
+
     getLog(state) {
-        console.log('get log: ', state.logStatus);
         return state.logStatus
     }
 

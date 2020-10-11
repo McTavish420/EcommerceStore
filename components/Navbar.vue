@@ -83,7 +83,7 @@
                             <span class="icp-nav-link-border"></span>
 
                             <template>
-                                <nuxt-link to="/profile" 
+                                <nuxt-link :to="$store.getters.getLog ? '/profile' : '/login'" 
                                   class="nav-a nav-a-2"
                                   id="nav-link-accountList"
                                   tabindex="0">
