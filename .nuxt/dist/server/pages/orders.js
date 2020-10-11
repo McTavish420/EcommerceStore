@@ -169,7 +169,7 @@ var staticRenderFns = []
     $axios
   }) {
     try {
-      let response = await $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/orders`);
+      let response = await $axios.$get(`${"http://localhost:3001"}/api/orders`);
 
       if (response.success) {
         return {

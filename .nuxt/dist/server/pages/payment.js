@@ -176,7 +176,7 @@ var external_vuex_ = __webpack_require__(4);
     async onPurchase() {
       try {
         let token = await this.stripe.createToken(this.card);
-        let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/payment/pay`, {
+        let response = await this.$axios.$post(`${"http://localhost:3001"}/api/payment/pay`, {
           token: token,
           totalPrice: this.getCartTotalPriceWithTotalPrice,
           cart: this.getCart,

@@ -138,7 +138,6 @@ export default {
               password: this.password,
             },
           });
-          console.log('login', response);
           await this.$auth.fetchUser()
           await this.$store.dispatch("setLoggedUser");
 

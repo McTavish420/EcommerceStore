@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 82:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -217,8 +217,8 @@ var staticRenderFns = []
     params
   }) {
     try {
-      let getCountries = $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/addresses/get/countries`);
-      let getAddress = $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/addresses/${params.id}`);
+      let getCountries = $axios.$get(`${"http://localhost:3001"}/api/addresses/get/countries`);
+      let getAddress = $axios.$get(`${"http://localhost:3001"}/api/addresses/${params.id}`);
       let [countriesResponse, addressResponse] = await Promise.all([getCountries, getAddress]);
       return {
         countries: countriesResponse.countries,
@@ -257,7 +257,7 @@ var staticRenderFns = []
           deliveryInstructions: this.deliveryInstructions,
           securityCode: this.securityCode
         };
-        let response = await this.$axios.$put(`${"https://ecommstore2019.herokuapp.com"}/api/addresses/${id}`, data);
+        let response = await this.$axios.$put(`${"http://localhost:3001"}/api/addresses/${id}`, data);
 
         if (response.success) {
           this.$router.push('/address');

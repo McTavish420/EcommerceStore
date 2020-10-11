@@ -14,10 +14,10 @@ const _74299726 = () => interopDefault(import('..\\pages\\search.vue' /* webpack
 const _ffdd2ad4 = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
 const _7bf3b1aa = () => interopDefault(import('..\\pages\\verify\\index.vue' /* webpackChunkName: "pages/verify/index" */))
 const _048a47aa = () => interopDefault(import('..\\pages\\address\\add.vue' /* webpackChunkName: "pages/address/add" */))
+const _5c8111d9 = () => interopDefault(import('..\\pages\\verify\\confirm.vue' /* webpackChunkName: "pages/verify/confirm" */))
 const _c712be78 = () => interopDefault(import('..\\pages\\address\\_id.vue' /* webpackChunkName: "pages/address/_id" */))
 const _3beab948 = () => interopDefault(import('..\\pages\\products\\_id.vue' /* webpackChunkName: "pages/products/_id" */))
 const _78dcf706 = () => interopDefault(import('..\\pages\\reviews\\_id.vue' /* webpackChunkName: "pages/reviews/_id" */))
-const _048655f1 = () => interopDefault(import('..\\pages\\verify\\_token.vue' /* webpackChunkName: "pages/verify/_token" */))
 const _66aeca78 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -81,6 +81,10 @@ export const routerOptions = {
     component: _048a47aa,
     name: "address-add"
   }, {
+    path: "/verify/confirm",
+    component: _5c8111d9,
+    name: "verify-confirm"
+  }, {
     path: "/address/:id",
     component: _c712be78,
     name: "address-id"
@@ -92,10 +96,6 @@ export const routerOptions = {
     path: "/reviews/:id?",
     component: _78dcf706,
     name: "reviews-id"
-  }, {
-    path: "/verify/:token",
-    component: _048655f1,
-    name: "verify-token"
   }, {
     path: "/",
     component: _66aeca78,

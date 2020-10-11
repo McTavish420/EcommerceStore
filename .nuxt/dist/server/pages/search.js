@@ -203,7 +203,7 @@ const rating =  false ? undefined : {};
     query
   }) {
     try {
-      let products = await $axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/search`, {
+      let products = await $axios.$post(`${"http://localhost:3001"}/api/search`, {
         title: query.title
       });
       return {

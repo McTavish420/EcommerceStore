@@ -1,7 +1,7 @@
 exports.ids = [12];
 exports.modules = {
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -133,7 +133,7 @@ const rating =  false ? undefined : {};
     params
   }) {
     try {
-      let response = await $axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/products/${params.id}`);
+      let response = await $axios.$get(`${"http://localhost:3001"}/api/products/${params.id}`);
       return {
         product: response.product
       };
@@ -165,7 +165,7 @@ const rating =  false ? undefined : {};
         data.append('body', this.body);
         data.append('rating', this.rating);
         data.append('photo', this.selectedFile, this.selectedFile.name);
-        let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/review/${this.$route.params.id}`, data);
+        let response = await this.$axios.$post(`${"http://localhost:3001"}/api/review/${this.$route.params.id}`, data);
 
         if (response.success) {
           this.$router.push(`/products/${this.$route.params.id}`);

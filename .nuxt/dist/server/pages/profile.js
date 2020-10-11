@@ -104,7 +104,7 @@ var external_vuex_ = __webpack_require__(4);
       };
 
       try {
-        let response = await this.$axios.$put(`${"https://ecommstore2019.herokuapp.com"}/api/auth/user`, data);
+        let response = await this.$axios.$put(`${"http://localhost:3001"}/api/auth/user`, data);
 
         if (response.success) {
           this.userName = '';

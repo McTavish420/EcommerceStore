@@ -15,7 +15,7 @@
     "pages/reviews/_id.js": "pages/reviews/_id.js",
     "pages/search.js": "pages/search.js",
     "pages/signup.js": "pages/signup.js",
-    "pages/verify/_token.js": "pages/verify/_token.js",
+    "pages/verify/confirm.js": "pages/verify/confirm.js",
     "pages/verify/index.js": "pages/verify/index.js",
     "server.js": "server.js"
   },
@@ -34,7 +34,7 @@
     "pages/reviews/_id.js": "pages/reviews/_id.js.map",
     "pages/search.js": "pages/search.js.map",
     "pages/signup.js": "pages/signup.js.map",
-    "pages/verify/_token.js": "pages/verify/_token.js.map",
+    "pages/verify/confirm.js": "pages/verify/confirm.js.map",
     "pages/verify/index.js": "pages/verify/index.js.map",
     "server.js": "server.js.map"
   }

@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/_id","11":"pages/profile","12":"pages/reviews/_id","13":"pages/search","14":"pages/signup","15":"pages/verify/_token","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/_id","11":"pages/profile","12":"pages/reviews/_id","13":"pages/search","14":"pages/signup","15":"pages/verify/confirm","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -1538,7 +1538,7 @@ async function setContext(app, context) {
       error: context.error,
       base: '/',
       env: {
-        "DEV_BACKEND": "https://ecommstore2019.herokuapp.com",
+        "DEV_BACKEND": "http://localhost:3001",
         "STRIPE": "pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL"
       }
     }; // Only set once
@@ -2185,13 +2185,13 @@ const _7bf3b1aa = () => interopDefault(__webpack_require__.e(/* import() | pages
 
 const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 81)));
 
-const _c712be78 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 82)));
+const _5c8111d9 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/confirm */ 15).then(__webpack_require__.bind(null, 82)));
 
-const _3beab948 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/_id */ 10).then(__webpack_require__.bind(null, 83)));
+const _c712be78 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 83)));
 
-const _78dcf706 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/_id */ 12).then(__webpack_require__.bind(null, 84)));
+const _3beab948 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/_id */ 10).then(__webpack_require__.bind(null, 84)));
 
-const _048655f1 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/_token */ 15).then(__webpack_require__.bind(null, 85)));
+const _78dcf706 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/_id */ 12).then(__webpack_require__.bind(null, 85)));
 
 const _66aeca78 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 5).then(__webpack_require__.bind(null, 86))); // TODO: remove in Nuxt 3
 
@@ -2256,6 +2256,10 @@ const routerOptions = {
     component: _048a47aa,
     name: "address-add"
   }, {
+    path: "/verify/confirm",
+    component: _5c8111d9,
+    name: "verify-confirm"
+  }, {
     path: "/address/:id",
     component: _c712be78,
     name: "address-id"
@@ -2267,10 +2271,6 @@ const routerOptions = {
     path: "/reviews/:id?",
     component: _78dcf706,
     name: "reviews-id"
-  }, {
-    path: "/verify/:token",
-    component: _048655f1,
-    name: "verify-token"
   }, {
     path: "/",
     component: _66aeca78,
@@ -4247,13 +4247,13 @@ const DEFAULTS = {
   $auth.registerStrategy('local', new LocalScheme($auth, {
     "endpoints": {
       "login": {
-        "url": "https://ecommstore2019.herokuapp.com/api/auth/login",
+        "url": "http://localhost:3001/api/auth/login",
         "method": "post",
         "propertyName": "token"
       },
       "logout": true,
       "user": {
-        "url": "https://ecommstore2019.herokuapp.com/api/auth/user",
+        "url": "http://localhost:3001/api/auth/user",
         "method": "get",
         "propertyName": "user"
       }
