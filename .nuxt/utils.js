@@ -143,14 +143,14 @@ export async function setContext (app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       store: app.store,
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"DEV_BACKEND":"https://ecommstore2019.herokuapp.com","STRIPE":"pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL"}
+      env: {"DEV_BACKEND":"http://localhost:3001","STRIPE":"pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL"}
     }
     // Only set once
     if (!process.static && context.req) {
@@ -227,7 +227,7 @@ export async function setContext (app, context) {
   app.context.next = context.next
   app.context._redirected = false
   app.context._errored = false
-  app.context.isHMR = false
+  app.context.isHMR = Boolean(context.isHMR)
   app.context.params = app.context.route.params || {}
   app.context.query = app.context.route.query || {}
 }
@@ -245,6 +245,9 @@ export function middlewareSeries (promises, appContext) {
 export function promisify (fn, context) {
   let promise
   if (fn.length === 2) {
+      console.warn('Callback-based asyncData, fetch or middleware calls are deprecated. ' +
+        'Please switch to promises or async/await syntax')
+
     // fn(context, callback)
     promise = new Promise((resolve) => {
       fn(context, function (err, data) {

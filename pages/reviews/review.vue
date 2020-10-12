@@ -110,9 +110,9 @@ export default {
   components: {
     StarRating: rating.StarRating
   },
-  async asyncData ({ $axios, params }) {
+  async asyncData ({ $axios, route }) {
     try {
-      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${params.id}`)
+      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.query.art}`)
 
       return {
         product: response.product
@@ -146,10 +146,10 @@ export default {
         data.append('rating', this.rating)
         data.append('photo', this.selectedFile, this.selectedFile.name)
 
-        let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/review/${this.$route.params.id}`, data)
+        let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/review/${this.$route.query.art}`, data)
 
         if (response.success) {
-          this.$router.push(`/products/${this.$route.params.id}`)
+          this.$router.push({path: `/products/item`, query:{ item: this.$route.query.art } })
         }
       } catch (error) {
         console.log(error);

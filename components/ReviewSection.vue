@@ -257,7 +257,7 @@
             <div class="a-row">
               <span class="a-button a-button-base writeReviewButton" id="a-autoid-15">
                 <span class="a-button-inner">
-                  <nuxt-link :to="`/reviews/${product._id}`" class="a-button-text" role="button" style="margin-left: 10px !important; margin-right: 10px !important">Write a customer review</nuxt-link>
+                  <nuxt-link :to="$store.getters.getLog ? {path: `/reviews/review`, query:{ art: product._id } } : `/login`" class="a-button-text" role="button" style="margin-left: 10px !important; margin-right: 10px !important">Write a customer review</nuxt-link>
                 </span>
               </span>
             </div>
@@ -270,12 +270,16 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 const rating = process.client ? require('vue-rate-it') : {}
 export default {
   props: ['product', 'reviews'],
   components: {
     StarRating: rating.StarRating
   },
+  computed: {
+    ...mapGetters(['getLog'])
+  }
 };
 </script>
 

@@ -34,7 +34,7 @@
                     <div class="col-sm-9">
                       <!-- Title and Date -->
                       <div class="a-row a-spacing-small">
-                        <nuxt-link :to="`/products/${product._id}`" class="a-link-normal">
+                        <nuxt-link  :to="{path: `/products/item`, query:{ item: product._id } }" class="a-link-normal">
                           <h2 class="a-size-medium">
                             {{ product.title }}
                             <span class="a-letter-space"></span>
@@ -150,7 +150,7 @@ export default {
         products: response.products,
       }
     } catch (error) {
-      
+      console.log(error);
     }
   },
 

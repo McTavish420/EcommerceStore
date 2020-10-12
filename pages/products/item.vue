@@ -11,7 +11,7 @@
             </span>
           </li>
           <li>
-            <span class="a-list-item"></span>
+            <span class="a-list-item">></span>
           </li>
           <li>
             <span class="a-list-item">
@@ -375,10 +375,10 @@ export default {
     ReviewSection,
     StarRating: rating.StarRating
   },
-  async asyncData ({ $axios, params }) {
+  async asyncData ({ $axios, route }) {
     try {
-      let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${params.id}`)
-      let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${params.id}`)
+      let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.query.item}`)
+      let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${route.query.item}`)
       let shipments = $axios.$post(`${process.env.DEV_BACKEND}/api/payment/shipment`, {
         shipment: 'normal'
       })
@@ -390,6 +390,8 @@ export default {
                manyReviews,
                shipments
              ])
+            //  console.log('average rateing:\t', productResponse.product.averageRating);
+            //  console.log('reviews:\n', reviewResponse);
       return {
         product: productResponse.product,
         reviews: reviewResponse.reviews,

@@ -15,8 +15,8 @@ export default {
       // '/verify/_token',
       '/verify/confirm',
       '/verify/',
-      '/reviews/_id',
-      '/products/_id',
+      '/reviews/review',
+      '/products/item',
       '/address/_id',
       '/address/add',
       '/address/'

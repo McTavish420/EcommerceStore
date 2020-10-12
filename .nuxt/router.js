@@ -14,10 +14,10 @@ const _74299726 = () => interopDefault(import('..\\pages\\search.vue' /* webpack
 const _ffdd2ad4 = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
 const _7bf3b1aa = () => interopDefault(import('..\\pages\\verify\\index.vue' /* webpackChunkName: "pages/verify/index" */))
 const _048a47aa = () => interopDefault(import('..\\pages\\address\\add.vue' /* webpackChunkName: "pages/address/add" */))
+const _c9aeae16 = () => interopDefault(import('..\\pages\\products\\item.vue' /* webpackChunkName: "pages/products/item" */))
+const _955c4636 = () => interopDefault(import('..\\pages\\reviews\\review.vue' /* webpackChunkName: "pages/reviews/review" */))
 const _5c8111d9 = () => interopDefault(import('..\\pages\\verify\\confirm.vue' /* webpackChunkName: "pages/verify/confirm" */))
 const _c712be78 = () => interopDefault(import('..\\pages\\address\\_id.vue' /* webpackChunkName: "pages/address/_id" */))
-const _3beab948 = () => interopDefault(import('..\\pages\\products\\_id.vue' /* webpackChunkName: "pages/products/_id" */))
-const _78dcf706 = () => interopDefault(import('..\\pages\\reviews\\_id.vue' /* webpackChunkName: "pages/reviews/_id" */))
 const _66aeca78 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -81,6 +81,14 @@ export const routerOptions = {
     component: _048a47aa,
     name: "address-add"
   }, {
+    path: "/products/item",
+    component: _c9aeae16,
+    name: "products-item"
+  }, {
+    path: "/reviews/review",
+    component: _955c4636,
+    name: "reviews-review"
+  }, {
     path: "/verify/confirm",
     component: _5c8111d9,
     name: "verify-confirm"
@@ -88,14 +96,6 @@ export const routerOptions = {
     path: "/address/:id",
     component: _c712be78,
     name: "address-id"
-  }, {
-    path: "/products/:id?",
-    component: _3beab948,
-    name: "products-id"
-  }, {
-    path: "/reviews/:id?",
-    component: _78dcf706,
-    name: "reviews-id"
   }, {
     path: "/",
     component: _66aeca78,
