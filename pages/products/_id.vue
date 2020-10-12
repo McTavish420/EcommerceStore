@@ -254,7 +254,7 @@
                   </div>
                 </div>
 
-                <div class="a-section" v-if="$auth.$state.loggedIn">
+                <div class="a-section" v-if="$store.getters.getLog">
                   <div class="a-button-stack" @click="addProductToCart(product)">
                     <span class="a-spacing-small a-button-primary a-button-icon">
                       <span class="a-button-inner">
@@ -296,23 +296,23 @@
                   </div>
                 </div>
 
-                <div class="a-row" v-if="$auth.$state.loggedIn">
+                <div class="a-row" v-if="$store.getters.getLog">
                   <div class="a-spacing-top-small">
                     <div class="a-section a-spacing-none">
                       <div class="a-section a-spacing-none a-spacing-top-mini">
                         This item may ship to
-                        <b>{{ $auth.$state.user.address.city }}</b>
+                        <b>{{ $store.getters.getCity}}</b>
                         <b>Get it by {{ estimatedDelivery }}</b>
                       </div>
                     </div>
                   </div>
                 </div>
                 <hr />
-                <span class="a-declarative" v-if="$auth.$state.loggedIn">
+                <span class="a-declarative" v-if="$store.getters.getLog">
                   <nuxt-link to="/address" class="a-link-normal">
                     <div class="a-row a-spacing-mini">
                       <i class="fal fa-map-market-alt"></i>
-                      <span class="a-size-small">Deliver to {{ $auth.$state.user.address.city }}</span>
+                      <span class="a-size-small">Deliver to {{ $store.getters.getCity }}</span>
                     </div>
                   </nuxt-link>
                 </span>
@@ -367,6 +367,7 @@
 
 <script>
 import { mapActions } from 'vuex'
+import { mapGetters } from 'vuex'
 import ReviewSection from '../../components/ReviewSection'
 const rating = process.client ? require('vue-rate-it') : {}
 export default {
@@ -418,7 +419,8 @@ export default {
   },
 
   methods: {
-    ...mapActions(['addProductToCart'])
+    ...mapActions(['addProductToCart']),
+    ...mapGetters(['getLog', 'getCity'])
   },
 }
 </script>

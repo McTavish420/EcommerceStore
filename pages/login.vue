@@ -144,8 +144,6 @@ export default {
           this.$router.push("/");
         }
       } catch (error) {
-          this.email = ''
-          this.password = ''
           this.pError = true
           this.eError = true
         console.log('error here', error);
