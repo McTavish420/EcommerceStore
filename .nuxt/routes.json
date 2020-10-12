@@ -36,6 +36,12 @@
     "chunkName": "pages/placeorder"
   },
   {
+    "name": "product",
+    "path": "/product",
+    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\product.vue",
+    "chunkName": "pages/product"
+  },
+  {
     "name": "profile",
     "path": "/profile",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\profile.vue",
@@ -64,12 +70,6 @@
     "path": "/address/add",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\address\\\\add.vue",
     "chunkName": "pages/address/add"
-  },
-  {
-    "name": "products-item",
-    "path": "/products/item",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\products\\\\item.vue",
-    "chunkName": "pages/products/item"
   },
   {
     "name": "reviews-review",

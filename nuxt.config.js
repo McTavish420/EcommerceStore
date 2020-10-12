@@ -16,7 +16,7 @@ export default {
       '/verify/confirm',
       '/verify/',
       '/reviews/review',
-      '/products/item',
+      '/product',
       '/address/_id',
       '/address/add',
       '/address/'

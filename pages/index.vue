@@ -34,7 +34,7 @@
                     <div class="col-sm-9">
                       <!-- Title and Date -->
                       <div class="a-row a-spacing-small">
-                        <nuxt-link  :to="{path: `/products/item`, query:{ item: product._id } }" class="a-link-normal">
+                        <nuxt-link  :to="{path: `/product`, query:{ item: product._id } }" class="a-link-normal">
                           <h2 class="a-size-medium">
                             {{ product.title }}
                             <span class="a-letter-space"></span>
@@ -146,6 +146,9 @@ export default {
   async asyncData ({ $axios }) {
     try {
       let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products`)
+      response.products.forEach(product => {
+        console.log(`${product.title}:\t`, product.averageRating);
+      })
       return {
         products: response.products,
       }

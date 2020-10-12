@@ -9,12 +9,12 @@ const _d35f844a = () => interopDefault(import('..\\pages\\login.vue' /* webpackC
 const _66b8a43a = () => interopDefault(import('..\\pages\\orders.vue' /* webpackChunkName: "pages/orders" */))
 const _50058910 = () => interopDefault(import('..\\pages\\payment.vue' /* webpackChunkName: "pages/payment" */))
 const _6bc4f1a5 = () => interopDefault(import('..\\pages\\placeorder.vue' /* webpackChunkName: "pages/placeorder" */))
+const _4a358c3e = () => interopDefault(import('..\\pages\\product.vue' /* webpackChunkName: "pages/product" */))
 const _3e65099b = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
 const _74299726 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages/search" */))
 const _ffdd2ad4 = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
 const _7bf3b1aa = () => interopDefault(import('..\\pages\\verify\\index.vue' /* webpackChunkName: "pages/verify/index" */))
 const _048a47aa = () => interopDefault(import('..\\pages\\address\\add.vue' /* webpackChunkName: "pages/address/add" */))
-const _c9aeae16 = () => interopDefault(import('..\\pages\\products\\item.vue' /* webpackChunkName: "pages/products/item" */))
 const _955c4636 = () => interopDefault(import('..\\pages\\reviews\\review.vue' /* webpackChunkName: "pages/reviews/review" */))
 const _5c8111d9 = () => interopDefault(import('..\\pages\\verify\\confirm.vue' /* webpackChunkName: "pages/verify/confirm" */))
 const _c712be78 = () => interopDefault(import('..\\pages\\address\\_id.vue' /* webpackChunkName: "pages/address/_id" */))
@@ -61,6 +61,10 @@ export const routerOptions = {
     component: _6bc4f1a5,
     name: "placeorder"
   }, {
+    path: "/product",
+    component: _4a358c3e,
+    name: "product"
+  }, {
     path: "/profile",
     component: _3e65099b,
     name: "profile"
@@ -80,10 +84,6 @@ export const routerOptions = {
     path: "/address/add",
     component: _048a47aa,
     name: "address-add"
-  }, {
-    path: "/products/item",
-    component: _c9aeae16,
-    name: "products-item"
   }, {
     path: "/reviews/review",
     component: _955c4636,

@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/item","11":"pages/profile","12":"pages/reviews/review","13":"pages/search","14":"pages/signup","15":"pages/verify/confirm","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/product","11":"pages/profile","12":"pages/reviews/review","13":"pages/search","14":"pages/signup","15":"pages/verify/confirm","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -2175,17 +2175,17 @@ const _50058910 = () => interopDefault(__webpack_require__.e(/* import() | pages
 
 const _6bc4f1a5 = () => interopDefault(__webpack_require__.e(/* import() | pages/placeorder */ 9).then(__webpack_require__.bind(null, 76)));
 
-const _3e65099b = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 77)));
+const _4a358c3e = () => interopDefault(__webpack_require__.e(/* import() | pages/product */ 10).then(__webpack_require__.bind(null, 77)));
 
-const _74299726 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 78)));
+const _3e65099b = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 78)));
 
-const _ffdd2ad4 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 79)));
+const _74299726 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 79)));
 
-const _7bf3b1aa = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/index */ 16).then(__webpack_require__.bind(null, 80)));
+const _ffdd2ad4 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 80)));
 
-const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 81)));
+const _7bf3b1aa = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/index */ 16).then(__webpack_require__.bind(null, 81)));
 
-const _c9aeae16 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/item */ 10).then(__webpack_require__.bind(null, 82)));
+const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 82)));
 
 const _955c4636 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/review */ 12).then(__webpack_require__.bind(null, 83)));
 
@@ -2236,6 +2236,10 @@ const routerOptions = {
     component: _6bc4f1a5,
     name: "placeorder"
   }, {
+    path: "/product",
+    component: _4a358c3e,
+    name: "product"
+  }, {
     path: "/profile",
     component: _3e65099b,
     name: "profile"
@@ -2255,10 +2259,6 @@ const routerOptions = {
     path: "/address/add",
     component: _048a47aa,
     name: "address-add"
-  }, {
-    path: "/products/item",
-    component: _c9aeae16,
-    name: "products-item"
   }, {
     path: "/reviews/review",
     component: _955c4636,
