@@ -368,7 +368,7 @@
 <script>
 import { mapActions } from 'vuex'
 import { mapGetters } from 'vuex'
-import ReviewSection from '../components/ReviewSection'
+import ReviewSection from '../../components/ReviewSection'
 const rating = process.client ? require('vue-rate-it') : {}
 export default {
   components: {

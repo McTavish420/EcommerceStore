@@ -3,96 +3,144 @@
     "name": "address",
     "path": "/address",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\address\\\\index.vue",
-    "chunkName": "pages/address/index"
+    "chunkName": "pages/address/index",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\cart.vue",
-    "chunkName": "pages/cart"
+    "chunkName": "pages/cart",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "login",
     "path": "/login",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\login.vue",
-    "chunkName": "pages/login"
+    "chunkName": "pages/login",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "orders",
     "path": "/orders",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\orders.vue",
-    "chunkName": "pages/orders"
+    "chunkName": "pages/orders",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "payment",
     "path": "/payment",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\payment.vue",
-    "chunkName": "pages/payment"
+    "chunkName": "pages/payment",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "placeorder",
     "path": "/placeorder",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\placeorder.vue",
-    "chunkName": "pages/placeorder"
-  },
-  {
-    "name": "product",
-    "path": "/product",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\product.vue",
-    "chunkName": "pages/product"
+    "chunkName": "pages/placeorder",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "profile",
     "path": "/profile",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\profile.vue",
-    "chunkName": "pages/profile"
+    "chunkName": "pages/profile",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "search",
     "path": "/search",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\search.vue",
-    "chunkName": "pages/search"
+    "chunkName": "pages/search",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "signup",
     "path": "/signup",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\signup.vue",
-    "chunkName": "pages/signup"
+    "chunkName": "pages/signup",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "verify",
     "path": "/verify",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\verify\\\\index.vue",
-    "chunkName": "pages/verify/index"
+    "chunkName": "pages/verify/index",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "address-add",
     "path": "/address/add",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\address\\\\add.vue",
-    "chunkName": "pages/address/add"
+    "chunkName": "pages/address/add",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
+  },
+  {
+    "name": "products-item",
+    "path": "/products/item",
+    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\products\\\\item.vue",
+    "chunkName": "pages/products/item",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "reviews-review",
     "path": "/reviews/review",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\reviews\\\\review.vue",
-    "chunkName": "pages/reviews/review"
+    "chunkName": "pages/reviews/review",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "verify-confirm",
     "path": "/verify/confirm",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\verify\\\\confirm.vue",
-    "chunkName": "pages/verify/confirm"
+    "chunkName": "pages/verify/confirm",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "address-id",
     "path": "/address/:id",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\address\\\\_id.vue",
-    "chunkName": "pages/address/_id"
+    "chunkName": "pages/address/_id",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   },
   {
     "name": "index",
     "path": "/",
     "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "pathToRegexpOptions": {
+      "strict": true
+    }
   }
 ]

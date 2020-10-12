@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/product","11":"pages/profile","12":"pages/reviews/review","13":"pages/search","14":"pages/signup","15":"pages/verify/confirm","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/item","11":"pages/profile","12":"pages/reviews/review","13":"pages/search","14":"pages/signup","15":"pages/verify/confirm","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -2175,17 +2175,17 @@ const _50058910 = () => interopDefault(__webpack_require__.e(/* import() | pages
 
 const _6bc4f1a5 = () => interopDefault(__webpack_require__.e(/* import() | pages/placeorder */ 9).then(__webpack_require__.bind(null, 76)));
 
-const _4a358c3e = () => interopDefault(__webpack_require__.e(/* import() | pages/product */ 10).then(__webpack_require__.bind(null, 77)));
+const _3e65099b = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 77)));
 
-const _3e65099b = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 78)));
+const _74299726 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 78)));
 
-const _74299726 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 79)));
+const _ffdd2ad4 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 79)));
 
-const _ffdd2ad4 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 80)));
+const _7bf3b1aa = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/index */ 16).then(__webpack_require__.bind(null, 80)));
 
-const _7bf3b1aa = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/index */ 16).then(__webpack_require__.bind(null, 81)));
+const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 81)));
 
-const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 82)));
+const _c9aeae16 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/item */ 10).then(__webpack_require__.bind(null, 82)));
 
 const _955c4636 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/review */ 12).then(__webpack_require__.bind(null, 83)));
 
@@ -2214,66 +2214,114 @@ const routerOptions = {
   routes: [{
     path: "/address",
     component: _ed8b1148,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "address"
   }, {
     path: "/cart",
     component: _f74c9bc4,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "cart"
   }, {
     path: "/login",
     component: _d35f844a,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "login"
   }, {
     path: "/orders",
     component: _66b8a43a,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "orders"
   }, {
     path: "/payment",
     component: _50058910,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "payment"
   }, {
     path: "/placeorder",
     component: _6bc4f1a5,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "placeorder"
-  }, {
-    path: "/product",
-    component: _4a358c3e,
-    name: "product"
   }, {
     path: "/profile",
     component: _3e65099b,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "profile"
   }, {
     path: "/search",
     component: _74299726,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "search"
   }, {
     path: "/signup",
     component: _ffdd2ad4,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "signup"
   }, {
     path: "/verify",
     component: _7bf3b1aa,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "verify"
   }, {
     path: "/address/add",
     component: _048a47aa,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "address-add"
+  }, {
+    path: "/products/item",
+    component: _c9aeae16,
+    pathToRegexpOptions: {
+      "strict": true
+    },
+    name: "products-item"
   }, {
     path: "/reviews/review",
     component: _955c4636,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "reviews-review"
   }, {
     path: "/verify/confirm",
     component: _5c8111d9,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "verify-confirm"
   }, {
     path: "/address/:id",
     component: _c712be78,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "address-id"
   }, {
     path: "/",
     component: _66aeca78,
+    pathToRegexpOptions: {
+      "strict": true
+    },
     name: "index"
   }],
   fallback: false

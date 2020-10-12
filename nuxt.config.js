@@ -14,12 +14,12 @@ export default {
       '/cart',
       // '/verify/_token',
       '/verify/confirm',
-      '/verify/',
+      '/verify',
       '/reviews/review',
-      '/product',
+      '/products/item',
       '/address/_id',
       '/address/add',
-      '/address/'
+      '/address'
     ],
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -104,6 +104,10 @@ export default {
         // autoFetchUser: false
       }
     }
+  },
+
+  router: {
+    trailingSlash: false
   },
 
   env: {
