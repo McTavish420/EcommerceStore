@@ -985,6 +985,8 @@ __webpack_require__.r(__webpack_exports__);
   route,
   redirect
 }) {
+  console.log('inside middleware route\n', route);
+
   if (route.path !== '/' && route.path.endsWith('/')) {
     const {
       path,
@@ -998,8 +1000,6 @@ __webpack_require__.r(__webpack_exports__);
       hash
     };
     redirect(nextRoute);
-  } else {
-    redirect(route);
   }
 });
 

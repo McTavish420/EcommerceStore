@@ -401,11 +401,6 @@ export default {
     } catch (error) {
       console.log('something went wrong');
       console.log('failed to try\n', error);
-      return {
-        product: {},
-        reviews: [],
-        estimatedDelivery: {}
-      }
     }
   },
 
