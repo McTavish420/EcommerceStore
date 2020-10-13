@@ -18,7 +18,8 @@ export default {
       '/reviews/review',
       // '/products/item',
       {
-        path: 'products/item'
+        path: 'products/item',
+        query: {}
       },
       '/address/_id',
       '/address/add',

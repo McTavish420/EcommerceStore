@@ -376,6 +376,11 @@ export default {
     StarRating: rating.StarRating
   },
   watchQuery: ['item'],
+  beforeRouteEnter (to, from, next) {
+    console.log('this is from:\n', from);
+    console.log('this is to:\n', to);
+    next()
+  },
   async asyncData ({ $axios, query, route }) {
     const url = route
     console.log('route item: \n', route);
