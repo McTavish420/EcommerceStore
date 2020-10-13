@@ -377,9 +377,12 @@ export default {
   },
   watchQuery: ['item'],
   beforeRouteEnter (to, from, next) {
-    console.log('this is from:\n', from);
-    console.log('this is to:\n', to);
-    next()
+    if (from.fullPath.includes('/products/item?item=')) {
+      to = from
+      next()
+    } else {
+      next()
+    }
   },
   async asyncData ({ $axios, query, route }) {
     const url = route
