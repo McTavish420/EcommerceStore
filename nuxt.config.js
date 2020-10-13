@@ -16,7 +16,10 @@ export default {
       '/verify/confirm',
       '/verify',
       '/reviews/review',
-      '/products/item',
+      // '/products/item',
+      {
+        path: 'products/item'
+      },
       '/address/_id',
       '/address/add',
       '/address'
