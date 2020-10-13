@@ -113,7 +113,6 @@ export default {
   },
 
   router: {
-    middleware: 'trailingSlashRedirect',
     trailingSlash: false
   },
 

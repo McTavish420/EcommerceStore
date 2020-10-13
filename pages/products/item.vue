@@ -376,7 +376,9 @@ export default {
     StarRating: rating.StarRating
   },
   watchQuery: ['item'],
-  async asyncData ({ $axios, query }) {
+  async asyncData ({ $axios, query, route }) {
+    const url = route
+    console.log('route item: \n', route);
     try {
       let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${query.item}`)
       let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${query.item}`)

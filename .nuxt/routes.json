@@ -6,8 +6,7 @@
     "chunkName": "pages/address/index",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_ed8b1148"
+    }
   },
   {
     "name": "cart",
@@ -16,8 +15,7 @@
     "chunkName": "pages/cart",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_f74c9bc4"
+    }
   },
   {
     "name": "login",
@@ -26,8 +24,7 @@
     "chunkName": "pages/login",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_d35f844a"
+    }
   },
   {
     "name": "orders",
@@ -36,8 +33,7 @@
     "chunkName": "pages/orders",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_66b8a43a"
+    }
   },
   {
     "name": "payment",
@@ -46,8 +42,7 @@
     "chunkName": "pages/payment",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_50058910"
+    }
   },
   {
     "name": "placeorder",
@@ -56,8 +51,7 @@
     "chunkName": "pages/placeorder",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_6bc4f1a5"
+    }
   },
   {
     "name": "profile",
@@ -66,8 +60,7 @@
     "chunkName": "pages/profile",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_3e65099b"
+    }
   },
   {
     "name": "search",
@@ -76,8 +69,7 @@
     "chunkName": "pages/search",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_74299726"
+    }
   },
   {
     "name": "signup",
@@ -86,8 +78,7 @@
     "chunkName": "pages/signup",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_ffdd2ad4"
+    }
   },
   {
     "name": "verify",
@@ -96,8 +87,7 @@
     "chunkName": "pages/verify/index",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_7bf3b1aa"
+    }
   },
   {
     "name": "address-add",
@@ -106,8 +96,7 @@
     "chunkName": "pages/address/add",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_048a47aa"
+    }
   },
   {
     "name": "products-item",
@@ -116,8 +105,7 @@
     "chunkName": "pages/products/item",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_c9aeae16"
+    }
   },
   {
     "name": "reviews-review",
@@ -126,8 +114,7 @@
     "chunkName": "pages/reviews/review",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_955c4636"
+    }
   },
   {
     "name": "verify-confirm",
@@ -136,8 +123,7 @@
     "chunkName": "pages/verify/confirm",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_5c8111d9"
+    }
   },
   {
     "name": "address-id",
@@ -146,8 +132,7 @@
     "chunkName": "pages/address/_id",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_c712be78"
+    }
   },
   {
     "name": "index",
@@ -156,7 +141,6 @@
     "chunkName": "pages/index",
     "pathToRegexpOptions": {
       "strict": true
-    },
-    "_name": "_66aeca78"
+    }
   }
 ]
