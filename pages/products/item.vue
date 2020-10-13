@@ -375,10 +375,11 @@ export default {
     ReviewSection,
     StarRating: rating.StarRating
   },
-  async asyncData ({ $axios, route }) {
+  watchQuery: ['item'],
+  async asyncData ({ $axios, query }) {
     try {
-      let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.query.item}`)
-      let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${route.query.item}`)
+      let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${query.item}`)
+      let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${query.item}`)
       let shipments = $axios.$post(`${process.env.DEV_BACKEND}/api/payment/shipment`, {
         shipment: 'normal'
       })
