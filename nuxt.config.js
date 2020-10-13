@@ -106,14 +106,14 @@ export default {
     }
   },
 
-  router: {
-    trailingSlash: false
-  },
-
   env: {
     DEV_BACKEND: 'https://ecommstore2019.herokuapp.com',
     // DEV_BACKEND: 'http://localhost:3001',
     STRIPE: 'pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL',
+  },
+
+  router: {
+    trailingSlash: false
   },
 
   
