@@ -375,21 +375,10 @@ export default {
     ReviewSection,
     StarRating: rating.StarRating
   },
-  watchQuery: ['item'],
-  beforeRouteEnter (to, from, next) {
-    if (from.fullPath.includes('/products/item?item=')) {
-      to = from
-      next()
-    } else {
-      next()
-    }
-  },
   async asyncData ({ $axios, query, route }) {
-    const url = route
-    console.log('route item: \n', route);
     try {
-      let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${query.item}`)
-      let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${query.item}`)
+      let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.query.item}`)
+      let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${route.query.item}`)
       let shipments = $axios.$post(`${process.env.DEV_BACKEND}/api/payment/shipment`, {
         shipment: 'normal'
       })

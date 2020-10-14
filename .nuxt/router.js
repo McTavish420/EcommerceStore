@@ -3,22 +3,22 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _ed8b1148 = () => interopDefault(import('..\\pages\\address\\index.vue' /* webpackChunkName: "pages/address/index" */))
-const _f74c9bc4 = () => interopDefault(import('..\\pages\\cart.vue' /* webpackChunkName: "pages/cart" */))
-const _d35f844a = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _66b8a43a = () => interopDefault(import('..\\pages\\orders.vue' /* webpackChunkName: "pages/orders" */))
-const _50058910 = () => interopDefault(import('..\\pages\\payment.vue' /* webpackChunkName: "pages/payment" */))
-const _6bc4f1a5 = () => interopDefault(import('..\\pages\\placeorder.vue' /* webpackChunkName: "pages/placeorder" */))
-const _3e65099b = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
-const _74299726 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages/search" */))
-const _ffdd2ad4 = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
-const _7bf3b1aa = () => interopDefault(import('..\\pages\\verify\\index.vue' /* webpackChunkName: "pages/verify/index" */))
-const _048a47aa = () => interopDefault(import('..\\pages\\address\\add.vue' /* webpackChunkName: "pages/address/add" */))
-const _c9aeae16 = () => interopDefault(import('..\\pages\\products\\item.vue' /* webpackChunkName: "pages/products/item" */))
-const _955c4636 = () => interopDefault(import('..\\pages\\reviews\\review.vue' /* webpackChunkName: "pages/reviews/review" */))
-const _5c8111d9 = () => interopDefault(import('..\\pages\\verify\\confirm.vue' /* webpackChunkName: "pages/verify/confirm" */))
-const _c712be78 = () => interopDefault(import('..\\pages\\address\\_id.vue' /* webpackChunkName: "pages/address/_id" */))
-const _66aeca78 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _79eb31c6 = () => interopDefault(import('..\\pages\\address\\index.vue' /* webpackChunkName: "pages/address/index" */))
+const _14928908 = () => interopDefault(import('..\\pages\\cart.vue' /* webpackChunkName: "pages/cart" */))
+const _0d324431 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _3202724d = () => interopDefault(import('..\\pages\\orders.vue' /* webpackChunkName: "pages/orders" */))
+const _1e77044e = () => interopDefault(import('..\\pages\\payment.vue' /* webpackChunkName: "pages/payment" */))
+const _7c111de2 = () => interopDefault(import('..\\pages\\placeorder.vue' /* webpackChunkName: "pages/placeorder" */))
+const _f6425b1e = () => interopDefault(import('..\\pages\\profile.vue' /* webpackChunkName: "pages/profile" */))
+const _4cef48e0 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages/search" */))
+const _351fa200 = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
+const _bf0110fe = () => interopDefault(import('..\\pages\\verify\\index.vue' /* webpackChunkName: "pages/verify/index" */))
+const _dd69add6 = () => interopDefault(import('..\\pages\\address\\add.vue' /* webpackChunkName: "pages/address/add" */))
+const _e84d3942 = () => interopDefault(import('..\\pages\\products\\item.vue' /* webpackChunkName: "pages/products/item" */))
+const _4a8f208a = () => interopDefault(import('..\\pages\\reviews\\review.vue' /* webpackChunkName: "pages/reviews/review" */))
+const _fc30b6a2 = () => interopDefault(import('..\\pages\\verify\\confirm.vue' /* webpackChunkName: "pages/verify/confirm" */))
+const _3006edae = () => interopDefault(import('..\\pages\\address\\_id.vue' /* webpackChunkName: "pages/address/_id" */))
+const _438aa11a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -38,83 +38,67 @@ export const routerOptions = {
 
   routes: [{
     path: "/address",
-    component: _ed8b1148,
-    pathToRegexpOptions: {"strict":true},
+    component: _79eb31c6,
     name: "address"
   }, {
     path: "/cart",
-    component: _f74c9bc4,
-    pathToRegexpOptions: {"strict":true},
+    component: _14928908,
     name: "cart"
   }, {
     path: "/login",
-    component: _d35f844a,
-    pathToRegexpOptions: {"strict":true},
+    component: _0d324431,
     name: "login"
   }, {
     path: "/orders",
-    component: _66b8a43a,
-    pathToRegexpOptions: {"strict":true},
+    component: _3202724d,
     name: "orders"
   }, {
     path: "/payment",
-    component: _50058910,
-    pathToRegexpOptions: {"strict":true},
+    component: _1e77044e,
     name: "payment"
   }, {
     path: "/placeorder",
-    component: _6bc4f1a5,
-    pathToRegexpOptions: {"strict":true},
+    component: _7c111de2,
     name: "placeorder"
   }, {
     path: "/profile",
-    component: _3e65099b,
-    pathToRegexpOptions: {"strict":true},
+    component: _f6425b1e,
     name: "profile"
   }, {
     path: "/search",
-    component: _74299726,
-    pathToRegexpOptions: {"strict":true},
+    component: _4cef48e0,
     name: "search"
   }, {
     path: "/signup",
-    component: _ffdd2ad4,
-    pathToRegexpOptions: {"strict":true},
+    component: _351fa200,
     name: "signup"
   }, {
     path: "/verify",
-    component: _7bf3b1aa,
-    pathToRegexpOptions: {"strict":true},
+    component: _bf0110fe,
     name: "verify"
   }, {
     path: "/address/add",
-    component: _048a47aa,
-    pathToRegexpOptions: {"strict":true},
+    component: _dd69add6,
     name: "address-add"
   }, {
     path: "/products/item",
-    component: _c9aeae16,
-    pathToRegexpOptions: {"strict":true},
+    component: _e84d3942,
     name: "products-item"
   }, {
     path: "/reviews/review",
-    component: _955c4636,
-    pathToRegexpOptions: {"strict":true},
+    component: _4a8f208a,
     name: "reviews-review"
   }, {
     path: "/verify/confirm",
-    component: _5c8111d9,
-    pathToRegexpOptions: {"strict":true},
+    component: _fc30b6a2,
     name: "verify-confirm"
   }, {
     path: "/address/:id",
-    component: _c712be78,
-    pathToRegexpOptions: {"strict":true},
+    component: _3006edae,
     name: "address-id"
   }, {
     path: "/",
-    component: _66aeca78,
-    pathToRegexpOptions: {"strict":true},
+    component: _438aa11a,
     name: "index"
   }],
 

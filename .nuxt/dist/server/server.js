@@ -559,12 +559,12 @@ module.exports.__inject__ = function (context) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Footer.vue?vue&type=template&id=cbbfd416&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Footer.vue?vue&type=template&id=6dce655e&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',[_vm._ssrNode("<div class=\"navLeftFooter\"><a href=\"#\" id=\"navBackToTop\"><div class=\"navFooterBackToTop\" style=\"margin: 0px !important\"><span class=\"navFooterBackToTopText\">Back to top</span></div></a> <div class=\"navFooterCopyright\"><ul><li><a href=\"#\" class=\"nav_a\">Conditions of Use</a></li> <li><a href class=\"nav_a\">Privacy Notice</a></li> <li><a href class=\"nav_a\">Internet-Based Ads</a></li> <li class=\"nav_last\">© 2019, Ecommerce Store</li></ul></div></div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Footer.vue?vue&type=template&id=cbbfd416&
+// CONCATENATED MODULE: ./components/Footer.vue?vue&type=template&id=6dce655e&
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(1);
@@ -583,7 +583,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "1ecc81ce"
+  "13254dca"
   
 )
 
@@ -774,7 +774,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "e16839e4"
+  "d5c105e0"
   
 )
 
@@ -869,7 +869,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "7194a0a6"
+  "77683aa8"
   
 )
 
@@ -2163,37 +2163,37 @@ if (false) {}
 
 
 
-const _ed8b1148 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/index */ 3).then(__webpack_require__.bind(null, 71)));
+const _79eb31c6 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/index */ 3).then(__webpack_require__.bind(null, 71)));
 
-const _f74c9bc4 = () => interopDefault(__webpack_require__.e(/* import() | pages/cart */ 4).then(__webpack_require__.bind(null, 72)));
+const _14928908 = () => interopDefault(__webpack_require__.e(/* import() | pages/cart */ 4).then(__webpack_require__.bind(null, 72)));
 
-const _d35f844a = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 6).then(__webpack_require__.bind(null, 73)));
+const _0d324431 = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 6).then(__webpack_require__.bind(null, 73)));
 
-const _66b8a43a = () => interopDefault(__webpack_require__.e(/* import() | pages/orders */ 7).then(__webpack_require__.bind(null, 74)));
+const _3202724d = () => interopDefault(__webpack_require__.e(/* import() | pages/orders */ 7).then(__webpack_require__.bind(null, 74)));
 
-const _50058910 = () => interopDefault(__webpack_require__.e(/* import() | pages/payment */ 8).then(__webpack_require__.bind(null, 75)));
+const _1e77044e = () => interopDefault(__webpack_require__.e(/* import() | pages/payment */ 8).then(__webpack_require__.bind(null, 75)));
 
-const _6bc4f1a5 = () => interopDefault(__webpack_require__.e(/* import() | pages/placeorder */ 9).then(__webpack_require__.bind(null, 76)));
+const _7c111de2 = () => interopDefault(__webpack_require__.e(/* import() | pages/placeorder */ 9).then(__webpack_require__.bind(null, 76)));
 
-const _3e65099b = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 77)));
+const _f6425b1e = () => interopDefault(__webpack_require__.e(/* import() | pages/profile */ 11).then(__webpack_require__.bind(null, 77)));
 
-const _74299726 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 78)));
+const _4cef48e0 = () => interopDefault(__webpack_require__.e(/* import() | pages/search */ 13).then(__webpack_require__.bind(null, 78)));
 
-const _ffdd2ad4 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 79)));
+const _351fa200 = () => interopDefault(__webpack_require__.e(/* import() | pages/signup */ 14).then(__webpack_require__.bind(null, 79)));
 
-const _7bf3b1aa = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/index */ 16).then(__webpack_require__.bind(null, 80)));
+const _bf0110fe = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/index */ 16).then(__webpack_require__.bind(null, 80)));
 
-const _048a47aa = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 81)));
+const _dd69add6 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 81)));
 
-const _c9aeae16 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/item */ 10).then(__webpack_require__.bind(null, 82)));
+const _e84d3942 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/item */ 10).then(__webpack_require__.bind(null, 82)));
 
-const _955c4636 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/review */ 12).then(__webpack_require__.bind(null, 83)));
+const _4a8f208a = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/review */ 12).then(__webpack_require__.bind(null, 83)));
 
-const _5c8111d9 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/confirm */ 15).then(__webpack_require__.bind(null, 84)));
+const _fc30b6a2 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/confirm */ 15).then(__webpack_require__.bind(null, 84)));
 
-const _c712be78 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 85)));
+const _3006edae = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 85)));
 
-const _66aeca78 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 5).then(__webpack_require__.bind(null, 86))); // TODO: remove in Nuxt 3
+const _438aa11a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 5).then(__webpack_require__.bind(null, 86))); // TODO: remove in Nuxt 3
 
 
 const emptyFn = () => {};
@@ -2213,115 +2213,67 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/address",
-    component: _ed8b1148,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _79eb31c6,
     name: "address"
   }, {
     path: "/cart",
-    component: _f74c9bc4,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _14928908,
     name: "cart"
   }, {
     path: "/login",
-    component: _d35f844a,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _0d324431,
     name: "login"
   }, {
     path: "/orders",
-    component: _66b8a43a,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _3202724d,
     name: "orders"
   }, {
     path: "/payment",
-    component: _50058910,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _1e77044e,
     name: "payment"
   }, {
     path: "/placeorder",
-    component: _6bc4f1a5,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _7c111de2,
     name: "placeorder"
   }, {
     path: "/profile",
-    component: _3e65099b,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _f6425b1e,
     name: "profile"
   }, {
     path: "/search",
-    component: _74299726,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _4cef48e0,
     name: "search"
   }, {
     path: "/signup",
-    component: _ffdd2ad4,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _351fa200,
     name: "signup"
   }, {
     path: "/verify",
-    component: _7bf3b1aa,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _bf0110fe,
     name: "verify"
   }, {
     path: "/address/add",
-    component: _048a47aa,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _dd69add6,
     name: "address-add"
   }, {
     path: "/products/item",
-    component: _c9aeae16,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _e84d3942,
     name: "products-item"
   }, {
     path: "/reviews/review",
-    component: _955c4636,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _4a8f208a,
     name: "reviews-review"
   }, {
     path: "/verify/confirm",
-    component: _5c8111d9,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _fc30b6a2,
     name: "verify-confirm"
   }, {
     path: "/address/:id",
-    component: _c712be78,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _3006edae,
     name: "address-id"
   }, {
     path: "/",
-    component: _66aeca78,
-    pathToRegexpOptions: {
-      "strict": true
-    },
+    component: _438aa11a,
     name: "index"
   }],
   fallback: false
@@ -2498,7 +2450,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "11a7b3b1"
+  "2de7999a"
   
 )
 
@@ -2802,7 +2754,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "863eeeb6"
+  "4d232fa7"
   
 )
 
@@ -2813,12 +2765,12 @@ var bootstrap = __webpack_require__(30);
 // EXTERNAL MODULE: ./node_modules/bootstrap-vue/dist/bootstrap-vue.css
 var bootstrap_vue = __webpack_require__(32);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=2f6b42e4&
-var defaultvue_type_template_id_2f6b42e4_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Navbar'),_vm._ssrNode(" "),_c('Nuxt'),_vm._ssrNode(" "),_c('Footer')],2)}
-var defaultvue_type_template_id_2f6b42e4_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=78cd4ca8&
+var defaultvue_type_template_id_78cd4ca8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('Navbar'),_vm._ssrNode(" "),_c('Nuxt'),_vm._ssrNode(" "),_c('Footer')],2)}
+var defaultvue_type_template_id_78cd4ca8_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=2f6b42e4&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=78cd4ca8&
 
 // EXTERNAL MODULE: ./components/Navbar.vue + 4 modules
 var Navbar = __webpack_require__(14);
@@ -2860,12 +2812,12 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_2f6b42e4_render,
-  defaultvue_type_template_id_2f6b42e4_staticRenderFns,
+  defaultvue_type_template_id_78cd4ca8_render,
+  defaultvue_type_template_id_78cd4ca8_staticRenderFns,
   false,
   default_injectStyles,
   null,
-  "ce371974"
+  "290ab470"
   
 )
 
@@ -2913,7 +2865,7 @@ var none_component = Object(componentNormalizer["a" /* default */])(
   false,
   none_injectStyles,
   null,
-  "0afcc203"
+  "00ed6ec1"
   
 )
 
@@ -4442,7 +4394,7 @@ async function createApp(ssrContext, config = {}) {
         "hid": "og:description",
         "name": "og:description",
         "property": "og:description",
-        "content": "## Build Setup"
+        "content": "```bash\r # install dependencies\r $ npm install"
       }],
       "link": [{
         "rel": "icon",
@@ -4456,7 +4408,7 @@ async function createApp(ssrContext, config = {}) {
         "href": "\u002Fcss\u002Fdefault.css"
       }, {
         "rel": "manifest",
-        "href": "\u002F_nuxt\u002Fmanifest.53d91935.json"
+        "href": "\u002F_nuxt\u002Fmanifest.123e9056.json"
       }],
       "style": [],
       "htmlAttrs": {

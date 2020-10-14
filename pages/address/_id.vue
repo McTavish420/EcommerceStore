@@ -244,6 +244,8 @@ export default {
 
         let response = await this.$axios.$put(`${process.env.DEV_BACKEND}/api/addresses/${id}`, data)
         if (response.success) {
+          await this.$auth.fetchUser()
+          await this.$store.dispatch('setLoggedUser')
           this.$router.push('/address')
         }
       } catch (error) {

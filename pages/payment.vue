@@ -35,12 +35,12 @@
             <div class="a-section">
               <h2>Make a payment</h2>
               <div class="a-section a-spacing-none a-spacing-top-small">
-                <b>The total price is ${{ getCartTotalPriceWithTotalPrice }}</b>
+                <b>The total price is ${{ Number(getCartTotalPriceWithTotalPrice).toFixed(2) }}</b>
               </div>
 
               <!-- Error message  -->
               <div class="a-section a-spacing-none a-spacing-top-small">
-                <b>{{ error }}</b>
+                <p class="text-danger">{{ error.message }}</p>
               </div>
               <form action="#" method="post">
                 <div class="a-spacing-medium a-spacing-top-medium">
@@ -50,6 +50,8 @@
                     <div ref="card"></div>
 
                     <!-- End of Stripe card -->
+                    <div class="a-spacing-top-medium">
+                  </div>
                   </div>
 
                   <div class="a-spacing-top-medium"></div>
@@ -61,6 +63,23 @@
                   </div>
                   <div>
                     <span>If the address contains typos or other errors, your package may be undeliverable.</span>
+                  </div>
+                  <div class="a-spacing-top-medium"></div>
+                  <hr />
+                  <div class="a-spacing-top-medium">
+                    <span>
+                      <b>For Testing Purpose:</b>
+                    </span>
+                  </div>
+                  <div>
+                    <span>User Card Number as: 2223003122003222</span>
+                  </div>
+                  <div>
+                    <span>For Date: Use any date in "date/month" format</span>
+                    <span> Make sure the date is later than the current date.</span>
+                  </div>
+                  <div>
+                    <span>For CVC and Zip: Use any 3 numbers and 4 numbers respectively.</span>
                   </div>
 
                   <!-- Purchase Button -->
@@ -117,17 +136,22 @@ export default {
     async onPurchase () {
       try {
         let token = await this.stripe.createToken(this.card)
-        let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/payment/pay`, {
+        if (!token.error) {
+          let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/payment/pay`, {
         token: token,
         totalPrice: this.getCartTotalPriceWithTotalPrice,
         cart: this.getCart,
         estimatedDelivery: this.getEstimatedDelivery
       })
 
-      if (response.success) {
-        this.$store.commit('clearCart')
-        this.$router.push('/')
-      }
+         if (response.success) {
+            this.$store.commit('clearCart')
+             this.$router.push('/')
+          }
+        } else {
+          this.error = token.error
+        }
+        
       } catch (error) {
         this.error = error
         console.log(error);

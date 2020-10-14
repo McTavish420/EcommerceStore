@@ -12,14 +12,12 @@ export default {
       '/orders',
       '/login',
       '/cart',
-      // '/verify/_token',
       '/verify/confirm',
       '/verify',
       '/reviews/review',
       // '/products/item',
       {
-        path: 'products/item',
-        query: {}
+        path: '/products/item?item=:id'
       },
       '/address/_id',
       '/address/add',
@@ -116,9 +114,7 @@ export default {
     STRIPE: 'pk_test_51HTBHhH6tbYYyOHumFF7w1U3v0lGLFfZ1MlNtHPmvRRlBe4DpVBPDygQL6kfm1gLnTbGdHKqtgtdIkKxn5wJ0wId00SzN9GIrL',
   },
 
-  router: {
-    trailingSlash: false
-  },
+
 
   
 }

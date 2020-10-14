@@ -13,12 +13,12 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_326e9afb from 'nuxt_plugin_plugin_326e9afb' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_workbox_7c45753a from 'nuxt_plugin_workbox_7c45753a' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_bootstrapvue_2d6e6066 from 'nuxt_plugin_bootstrapvue_2d6e6066' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_05526f9e from 'nuxt_plugin_axios_05526f9e' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_595d0165 from 'nuxt_plugin_plugin_595d0165' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_workbox_37a2f824 from 'nuxt_plugin_workbox_37a2f824' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_bootstrapvue_2f6efb37 from 'nuxt_plugin_bootstrapvue_2f6efb37' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_6127a508 from 'nuxt_plugin_axios_6127a508' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_localStorage_6f608ce1 from 'nuxt_plugin_localStorage_6f608ce1' // Source: ..\\plugins\\localStorage.js (mode: 'client')
-import nuxt_plugin_plugin_66cbb0cd from 'nuxt_plugin_plugin_66cbb0cd' // Source: .\\auth\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_6079aeb7 from 'nuxt_plugin_plugin_6079aeb7' // Source: .\\auth\\plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -71,7 +71,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Ecommerce Store","script":[{"src":"https:\u002F\u002Fjs.stripe.com\u002Fv3"}],"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"client"},{"hid":"theme-color","name":"theme-color","content":"black"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"client"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"client"},{"hid":"og:description","name":"og:description","property":"og:description","content":"## Build Setup"}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"\u002Fimg\u002FlogoMine.png"},{"rel":"stylesheet","href":"\u002Fcss\u002Ffont-awesome\u002Fcss\u002Fall.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fdefault.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.53d91935.json"}],"style":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"Ecommerce Store","script":[{"src":"https:\u002F\u002Fjs.stripe.com\u002Fv3"}],"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"client"},{"hid":"theme-color","name":"theme-color","content":"black"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"client"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"client"},{"hid":"og:description","name":"og:description","property":"og:description","content":"```bash\r # install dependencies\r $ npm install"}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"\u002Fimg\u002FlogoMine.png"},{"rel":"stylesheet","href":"\u002Fcss\u002Ffont-awesome\u002Fcss\u002Fall.css"},{"rel":"stylesheet","href":"\u002Fcss\u002Fdefault.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.123e9056.json"}],"style":[],"htmlAttrs":{"lang":"en"}},
 
     store,
     router,
@@ -200,28 +200,28 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_326e9afb === 'function') {
-    await nuxt_plugin_plugin_326e9afb(app.context, inject)
+  if (typeof nuxt_plugin_plugin_595d0165 === 'function') {
+    await nuxt_plugin_plugin_595d0165(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_workbox_7c45753a === 'function') {
-    await nuxt_plugin_workbox_7c45753a(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_37a2f824 === 'function') {
+    await nuxt_plugin_workbox_37a2f824(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_2d6e6066 === 'function') {
-    await nuxt_plugin_bootstrapvue_2d6e6066(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_2f6efb37 === 'function') {
+    await nuxt_plugin_bootstrapvue_2f6efb37(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_05526f9e === 'function') {
-    await nuxt_plugin_axios_05526f9e(app.context, inject)
+  if (typeof nuxt_plugin_axios_6127a508 === 'function') {
+    await nuxt_plugin_axios_6127a508(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_localStorage_6f608ce1 === 'function') {
     await nuxt_plugin_localStorage_6f608ce1(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_66cbb0cd === 'function') {
-    await nuxt_plugin_plugin_66cbb0cd(app.context, inject)
+  if (typeof nuxt_plugin_plugin_6079aeb7 === 'function') {
+    await nuxt_plugin_plugin_6079aeb7(app.context, inject)
   }
 
   // Lock enablePreview in context

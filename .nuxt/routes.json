@@ -2,161 +2,113 @@
   {
     "name": "address",
     "path": "/address",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\address\\\\index.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\address\\\\index.vue",
     "chunkName": "pages/address/index",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_ed8b1148"
+    "_name": "_79eb31c6"
   },
   {
     "name": "cart",
     "path": "/cart",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\cart.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\cart.vue",
     "chunkName": "pages/cart",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_f74c9bc4"
+    "_name": "_14928908"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\login.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\login.vue",
     "chunkName": "pages/login",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_d35f844a"
+    "_name": "_0d324431"
   },
   {
     "name": "orders",
     "path": "/orders",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\orders.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\orders.vue",
     "chunkName": "pages/orders",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_66b8a43a"
+    "_name": "_3202724d"
   },
   {
     "name": "payment",
     "path": "/payment",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\payment.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\payment.vue",
     "chunkName": "pages/payment",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_50058910"
+    "_name": "_1e77044e"
   },
   {
     "name": "placeorder",
     "path": "/placeorder",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\placeorder.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\placeorder.vue",
     "chunkName": "pages/placeorder",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_6bc4f1a5"
+    "_name": "_7c111de2"
   },
   {
     "name": "profile",
     "path": "/profile",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\profile.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\profile.vue",
     "chunkName": "pages/profile",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_3e65099b"
+    "_name": "_f6425b1e"
   },
   {
     "name": "search",
     "path": "/search",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\search.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\search.vue",
     "chunkName": "pages/search",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_74299726"
+    "_name": "_4cef48e0"
   },
   {
     "name": "signup",
     "path": "/signup",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\signup.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\signup.vue",
     "chunkName": "pages/signup",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_ffdd2ad4"
+    "_name": "_351fa200"
   },
   {
     "name": "verify",
     "path": "/verify",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\verify\\\\index.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\verify\\\\index.vue",
     "chunkName": "pages/verify/index",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_7bf3b1aa"
+    "_name": "_bf0110fe"
   },
   {
     "name": "address-add",
     "path": "/address/add",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\address\\\\add.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\address\\\\add.vue",
     "chunkName": "pages/address/add",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_048a47aa"
+    "_name": "_dd69add6"
   },
   {
     "name": "products-item",
     "path": "/products/item",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\products\\\\item.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\products\\\\item.vue",
     "chunkName": "pages/products/item",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_c9aeae16"
+    "_name": "_e84d3942"
   },
   {
     "name": "reviews-review",
     "path": "/reviews/review",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\reviews\\\\review.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\reviews\\\\review.vue",
     "chunkName": "pages/reviews/review",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_955c4636"
+    "_name": "_4a8f208a"
   },
   {
     "name": "verify-confirm",
     "path": "/verify/confirm",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\verify\\\\confirm.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\verify\\\\confirm.vue",
     "chunkName": "pages/verify/confirm",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_5c8111d9"
+    "_name": "_fc30b6a2"
   },
   {
     "name": "address-id",
     "path": "/address/:id",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\address\\\\_id.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\address\\\\_id.vue",
     "chunkName": "pages/address/_id",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_c712be78"
+    "_name": "_3006edae"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "G:\\\\Deployment of Ecom\\\\client\\\\pages\\\\index.vue",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "pathToRegexpOptions": {
-      "strict": true
-    },
-    "_name": "_66aeca78"
+    "_name": "_438aa11a"
   }
 ]

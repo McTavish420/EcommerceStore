@@ -51,17 +51,36 @@ module.exports = exports;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/payment.vue?vue&type=template&id=1fd2d274&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_vm._ssrNode("<main>","</main>",[_vm._ssrNode("<div class=\"registerAddress mt-3\">","</div>",[_vm._ssrNode("<div class=\"container-fluid c-section\">","</div>",[_vm._ssrNode("<div class=\"row\">","</div>",[_vm._ssrNode("<div class=\"col-sm-3\"></div> "),_vm._ssrNode("<div class=\"col-sm-6\">","</div>",[_vm._ssrNode("<div class=\"a-section a-spacing-medium\">","</div>",[_vm._ssrNode("<div class=\"a-subheader a-breadcrumb a-spacing-small\">","</div>",[_vm._ssrNode("<ul>","</ul>",[_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/cart"}},[_c('span',[_vm._v("Your Cart")])])],1),_vm._ssrNode(" <li class=\"a-breadcrumb-divider\">›</li> "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/placeorder"}},[_c('span',[_vm._v("Place order")])])],1),_vm._ssrNode(" <li class=\"a-breadcrumb-divider\">›</li> "),_vm._ssrNode("<li class=\"active\">","</li>",[_c('nuxt-link',{attrs:{"to":"/payment"}},[_c('span',[_vm._v("Payment")])])],1)],2)])]),_vm._ssrNode(" <div class=\"a-section\"><h2>Make a payment</h2> <div class=\"a-section a-spacing-none a-spacing-top-small\"><b>"+_vm._ssrEscape("The total price is $"+_vm._s(_vm.getCartTotalPriceWithTotalPrice))+"</b></div> <div class=\"a-section a-spacing-none a-spacing-top-small\"><b>"+_vm._ssrEscape(_vm._s(_vm.error))+"</b></div> <form action=\"#\" method=\"post\"><div class=\"a-spacing-medium a-spacing-top-medium\"><div class=\"a-spacing-top-medium\"><div></div></div> <div class=\"a-spacing-top-medium\"></div> <hr> <div class=\"a-spacing-top-medium\"><span><b>Make sure your address is correct</b></span></div> <div><span>If the address contains typos or other errors, your package may be undeliverable.</span></div> <div class=\"a-spacing-top-large\"><span class=\"a-button-register\"><span class=\"a-button-inner\"><span class=\"a-button-text\">Purchase</span></span></span></div></div></form></div>")],2),_vm._ssrNode(" <div class=\"col-sm-3\"></div>")],2)])])])])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/payment.vue?vue&type=template&id=74c94fc7&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_vm._ssrNode("<main>","</main>",[_vm._ssrNode("<div class=\"registerAddress mt-3\">","</div>",[_vm._ssrNode("<div class=\"container-fluid c-section\">","</div>",[_vm._ssrNode("<div class=\"row\">","</div>",[_vm._ssrNode("<div class=\"col-sm-3\"></div> "),_vm._ssrNode("<div class=\"col-sm-6\">","</div>",[_vm._ssrNode("<div class=\"a-section a-spacing-medium\">","</div>",[_vm._ssrNode("<div class=\"a-subheader a-breadcrumb a-spacing-small\">","</div>",[_vm._ssrNode("<ul>","</ul>",[_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/cart"}},[_c('span',[_vm._v("Your Cart")])])],1),_vm._ssrNode(" <li class=\"a-breadcrumb-divider\">›</li> "),_vm._ssrNode("<li>","</li>",[_c('nuxt-link',{attrs:{"to":"/placeorder"}},[_c('span',[_vm._v("Place order")])])],1),_vm._ssrNode(" <li class=\"a-breadcrumb-divider\">›</li> "),_vm._ssrNode("<li class=\"active\">","</li>",[_c('nuxt-link',{attrs:{"to":"/payment"}},[_c('span',[_vm._v("Payment")])])],1)],2)])]),_vm._ssrNode(" <div class=\"a-section\"><h2>Make a payment</h2> <div class=\"a-section a-spacing-none a-spacing-top-small\"><b>"+_vm._ssrEscape("The total price is $"+_vm._s(Number(_vm.getCartTotalPriceWithTotalPrice).toFixed(2)))+"</b></div> <div class=\"a-section a-spacing-none a-spacing-top-small\"><p class=\"text-danger\">"+_vm._ssrEscape(_vm._s(_vm.error.message))+"</p></div> <form action=\"#\" method=\"post\"><div class=\"a-spacing-medium a-spacing-top-medium\"><div class=\"a-spacing-top-medium\"><div></div> <div class=\"a-spacing-top-medium\"></div></div> <div class=\"a-spacing-top-medium\"></div> <hr> <div class=\"a-spacing-top-medium\"><span><b>Make sure your address is correct</b></span></div> <div><span>If the address contains typos or other errors, your package may be undeliverable.</span></div> <div class=\"a-spacing-top-medium\"></div> <hr> <div class=\"a-spacing-top-medium\"><span><b>For Testing Purpose:</b></span></div> <div><span>User Card Number as: 2223003122003222</span></div> <div><span>For Date: Use any date in &quot;date/month&quot; format</span> <span> Make sure the date is later than the current date.</span></div> <div><span>For CVC and Zip: Use any 3 numbers and 4 numbers respectively.</span></div> <div class=\"a-spacing-top-large\"><span class=\"a-button-register\"><span class=\"a-button-inner\"><span class=\"a-button-text\">Purchase</span></span></span></div></div></form></div>")],2),_vm._ssrNode(" <div class=\"col-sm-3\"></div>")],2)])])])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/payment.vue?vue&type=template&id=1fd2d274&
+// CONCATENATED MODULE: ./pages/payment.vue?vue&type=template&id=74c94fc7&
 
 // EXTERNAL MODULE: external "vuex"
 var external_vuex_ = __webpack_require__(4);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/payment.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -176,16 +195,21 @@ var external_vuex_ = __webpack_require__(4);
     async onPurchase() {
       try {
         let token = await this.stripe.createToken(this.card);
-        let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/payment/pay`, {
-          token: token,
-          totalPrice: this.getCartTotalPriceWithTotalPrice,
-          cart: this.getCart,
-          estimatedDelivery: this.getEstimatedDelivery
-        });
 
-        if (response.success) {
-          this.$store.commit('clearCart');
-          this.$router.push('/');
+        if (!token.error) {
+          let response = await this.$axios.$post(`${"https://ecommstore2019.herokuapp.com"}/api/payment/pay`, {
+            token: token,
+            totalPrice: this.getCartTotalPriceWithTotalPrice,
+            cart: this.getCart,
+            estimatedDelivery: this.getEstimatedDelivery
+          });
+
+          if (response.success) {
+            this.$store.commit('clearCart');
+            this.$router.push('/');
+          }
+        } else {
+          this.error = token.error;
         }
       } catch (error) {
         this.error = error;
@@ -220,7 +244,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "ab2a4d74"
+  "728fc448"
   
 )
 

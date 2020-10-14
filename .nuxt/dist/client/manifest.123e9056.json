@@ -1,7 +1,7 @@
 {
   "name": "client",
   "short_name": "client",
-  "description": "## Build Setup",
+  "description": "```bash\r # install dependencies\r $ npm install",
   "icons": [],
   "start_url": "/?standalone=true",
   "display": "standalone",
