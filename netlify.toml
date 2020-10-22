@@ -1,2 +1,13 @@
 [build]
-  functions = "functions"
+  functions = "functions/"
+
+[[redirects]]
+  from = "/products/*"
+  to = "/products/item"
+  status = 200
+  query = {item = ":id"}
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
