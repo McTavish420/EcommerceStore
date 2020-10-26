@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/_item","11":"pages/profile","12":"pages/reviews/review","13":"pages/search","14":"pages/signup","15":"pages/verify/confirm","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"1":"pages/address/_id","2":"pages/address/add","3":"pages/address/index","4":"pages/cart","5":"pages/index","6":"pages/login","7":"pages/orders","8":"pages/payment","9":"pages/placeorder","10":"pages/products/_item","11":"pages/profile","12":"pages/reviews/_review","13":"pages/search","14":"pages/signup","15":"pages/verify/confirm","16":"pages/verify/index"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -2185,13 +2185,13 @@ const _bf0110fe = () => interopDefault(__webpack_require__.e(/* import() | pages
 
 const _dd69add6 = () => interopDefault(__webpack_require__.e(/* import() | pages/address/add */ 2).then(__webpack_require__.bind(null, 81)));
 
-const _4a8f208a = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/review */ 12).then(__webpack_require__.bind(null, 82)));
+const _fc30b6a2 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/confirm */ 15).then(__webpack_require__.bind(null, 82)));
 
-const _fc30b6a2 = () => interopDefault(__webpack_require__.e(/* import() | pages/verify/confirm */ 15).then(__webpack_require__.bind(null, 83)));
+const _3006edae = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 83)));
 
-const _3006edae = () => interopDefault(__webpack_require__.e(/* import() | pages/address/_id */ 1).then(__webpack_require__.bind(null, 84)));
+const _85b0e654 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/_item */ 10).then(__webpack_require__.bind(null, 84)));
 
-const _85b0e654 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/_item */ 10).then(__webpack_require__.bind(null, 85)));
+const _047ec9b8 = () => interopDefault(__webpack_require__.e(/* import() | pages/reviews/_review */ 12).then(__webpack_require__.bind(null, 85)));
 
 const _438aa11a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 5).then(__webpack_require__.bind(null, 86))); // TODO: remove in Nuxt 3
 
@@ -2256,10 +2256,6 @@ const routerOptions = {
     component: _dd69add6,
     name: "address-add"
   }, {
-    path: "/reviews/review",
-    component: _4a8f208a,
-    name: "reviews-review"
-  }, {
     path: "/verify/confirm",
     component: _fc30b6a2,
     name: "verify-confirm"
@@ -2271,6 +2267,10 @@ const routerOptions = {
     path: "/products/:item?",
     component: _85b0e654,
     name: "products-item"
+  }, {
+    path: "/reviews/:review?",
+    component: _047ec9b8,
+    name: "reviews-review"
   }, {
     path: "/",
     component: _438aa11a,

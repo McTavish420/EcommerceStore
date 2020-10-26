@@ -154,7 +154,7 @@
             <!-- Link to another Review page -->
             <span class="a-button-base writeReviewButton cm-cr-button-wide">
               <span class="a-button-inner">
-                <nuxt-link :to="`/reviews/${product._id}`" class="a-button-text">Write a customer review</nuxt-link>
+                <nuxt-link :to="$store.getters.getLog ? `/reviews/${product._id}` : `/login`" class="a-button-text" role="button" style="margin-left: 10px !important; margin-right: 10px !important">Write a customer review</nuxt-link>
               </span>
             </span>
           </div>
@@ -257,7 +257,7 @@
             <div class="a-row">
               <span class="a-button a-button-base writeReviewButton" id="a-autoid-15">
                 <span class="a-button-inner">
-                  <nuxt-link :to="$store.getters.getLog ? {path: `/reviews/review`, query:{ art: product._id } } : `/login`" class="a-button-text" role="button" style="margin-left: 10px !important; margin-right: 10px !important">Write a customer review</nuxt-link>
+                  <nuxt-link :to="$store.getters.getLog ? `/reviews/${product._id}` : `/login`" class="a-button-text" role="button" style="margin-left: 10px !important; margin-right: 10px !important">Write a customer review</nuxt-link>
                 </span>
               </span>
             </div>

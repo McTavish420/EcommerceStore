@@ -110,9 +110,9 @@ export default {
   components: {
     StarRating: rating.StarRating
   },
-  async asyncData ({ $axios, route }) {
+  async asyncData ({ $axios, params }) {
     try {
-      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.query.art}`)
+      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${params.review}`)
 
       return {
         product: response.product
@@ -140,16 +140,17 @@ export default {
 
     async onAddReview () {
       try {
+        // console.log('params: \t', this.$route.params);
         let data = new FormData()
         data.append('headline', this.headline)
         data.append('body', this.body)
         data.append('rating', this.rating)
         data.append('photo', this.selectedFile, this.selectedFile.name)
 
-        let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/review/${this.$route.query.art}`, data)
+        let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/review/${this.$route.params.review}`, data)
 
         if (response.success) {
-          this.$router.push({path: `/products/${this.$route.query.art}`})
+          this.$router.push({path: `/products/${this.$route.params.review}`})
         }
       } catch (error) {
         console.log(error);

@@ -14,11 +14,15 @@ export default {
       '/cart',
       '/verify/confirm',
       '/verify',
-      '/reviews/review',
+      // '/reviews/review',
       // '/products/_item',
       {
         path: '/products/:item?',
         component: 'pages/products/_item.vue'
+      },
+      {
+        path: '/reviews/:review?',
+        component: 'pages/reviews/_review.vue'
       },
       '/address/_id',
       '/address/add',
