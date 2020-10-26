@@ -1,4 +1,15 @@
-
+import axios from '@nuxtjs/axios'
+const dynamicRoutes = async () => {
+  // fetching products
+  const resPorducts = await axios.get('https://ecommstore2019.herokuapp.com/api/products')
+  const routesForProducts = resPorducts.data.map(product => {
+    return {
+      route: `/products/${product._id}`,
+      payload: product
+    }
+  })
+  return routesForProducts
+}
 export default {
   ssr: true,
   generate: {
@@ -16,10 +27,11 @@ export default {
       '/verify',
       // '/reviews/review',
       // '/products/_item',
-      {
-        path: '/products/:item?',
-        component: 'pages/products/_item.vue'
-      },
+      // {
+      //   path: '/products/:item?',
+      //   component: 'pages/products/_item.vue'
+      // },
+      dynamicRoutes,
       {
         path: '/reviews/:review?',
         component: 'pages/reviews/_review.vue'
