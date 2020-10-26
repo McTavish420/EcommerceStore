@@ -8,37 +8,96 @@ const dynamicRoutes = async () => {
       payload: product
     }
   })
-  return routesForProducts
+  const routesForReview = resPorducts.data.map(product => {
+    return {
+      route: `/reviews/${product._id}`,
+      payload: product
+    }
+  })
+  return {
+    routesForProducts, 
+    routesForReview
+   }
 }
 export default {
   ssr: true,
   generate: {
     routes: [
-      '/',
-      '/signup',
+      // '/',
+      {
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      // '/signup',
+      {
+        path: '/signup',
+        component: 'pages/signup.vue'
+      },
       '/search',
-      '/profile',
-      '/placeorder',
-      '/payment',
-      '/orders',
-      '/login',
-      '/cart',
-      '/verify/confirm',
-      '/verify',
-      // '/reviews/review',
-      // '/products/_item',
+      // '/profile',
+      {
+        path: '/profile',
+        component: 'pages/profile.vue'
+      },
+      // '/placeorder',
+      {
+        path: '/placeorder',
+        component: 'pages/placeorder.vue'
+      },
+      // '/payment',
+      {
+        path: '/payment',
+        component: 'pages/payment.vue'
+      },
+      // '/orders',
+      {
+        path: '/orders',
+        component: 'pages/orders.vue'
+      },
+      // '/login',
+      {
+        path: '/login',
+        component: 'pages/login.vue'
+      },
+      // '/cart',
+      {
+        path: '/cart',
+        component: 'pages/cart.vue'
+      },
+      // '/verify/confirm',
+      {
+        path: '/verify',
+        component: 'pages/verify/index.vue'
+      },
+      // '/verify',
+      {
+        path: '/verify/confirm',
+        component: 'pages/verify/confirm.vue'
+      },
       // {
       //   path: '/products/:item?',
       //   component: 'pages/products/_item.vue'
       // },
       dynamicRoutes,
+      // {
+      //   path: '/reviews/:review?',
+      //   component: 'pages/reviews/_review.vue'
+      // },
       {
-        path: '/reviews/:review?',
-        component: 'pages/reviews/_review.vue'
+        path: '/address/:id?',
+        component: 'pages/address/_id.vue'
       },
-      '/address/_id',
-      '/address/add',
-      '/address'
+      {
+        path: '/address',
+        component: 'pages/address/index.vue'
+      },
+      {
+        path: '/address/add',
+        component: 'pages/address/add.vue'
+      }
+      // '/address/_id',
+      // '/address/add',
+      // '/address'
     ],
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)

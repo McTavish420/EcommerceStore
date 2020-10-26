@@ -406,8 +406,12 @@ export default {
   data () {
     return {
       product: {
-        category: {},
-        owner: {},
+        category: {
+          type: ''
+        },
+        owner: {
+          name: ''
+        },
         title: '',
         description: '',
         photo: '',

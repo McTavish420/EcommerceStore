@@ -223,7 +223,18 @@ export default {
       zipCode: '',
       phoneNumber: '',
       deliveryInstructions: '',
+      securityCode: '',
+      address: {
+        country: 'Japan',
+      fullName: '',
+      streetAddress: '',
+      city: '',
+      state: '',
+      zipCode: '',
+      phoneNumber: '',
+      deliveryInstructions: '',
       securityCode: ''
+      }
     }
   },
   
