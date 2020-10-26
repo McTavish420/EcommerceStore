@@ -3,96 +3,112 @@
     "name": "address",
     "path": "/address",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\address\\\\index.vue",
-    "chunkName": "pages/address/index"
+    "chunkName": "pages/address/index",
+    "_name": "_79eb31c6"
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\cart.vue",
-    "chunkName": "pages/cart"
+    "chunkName": "pages/cart",
+    "_name": "_14928908"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\login.vue",
-    "chunkName": "pages/login"
+    "chunkName": "pages/login",
+    "_name": "_0d324431"
   },
   {
     "name": "orders",
     "path": "/orders",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\orders.vue",
-    "chunkName": "pages/orders"
+    "chunkName": "pages/orders",
+    "_name": "_3202724d"
   },
   {
     "name": "payment",
     "path": "/payment",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\payment.vue",
-    "chunkName": "pages/payment"
+    "chunkName": "pages/payment",
+    "_name": "_1e77044e"
   },
   {
     "name": "placeorder",
     "path": "/placeorder",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\placeorder.vue",
-    "chunkName": "pages/placeorder"
+    "chunkName": "pages/placeorder",
+    "_name": "_7c111de2"
   },
   {
     "name": "profile",
     "path": "/profile",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\profile.vue",
-    "chunkName": "pages/profile"
+    "chunkName": "pages/profile",
+    "_name": "_f6425b1e"
   },
   {
     "name": "search",
     "path": "/search",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\search.vue",
-    "chunkName": "pages/search"
+    "chunkName": "pages/search",
+    "_name": "_4cef48e0"
   },
   {
     "name": "signup",
     "path": "/signup",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\signup.vue",
-    "chunkName": "pages/signup"
+    "chunkName": "pages/signup",
+    "_name": "_351fa200"
   },
   {
     "name": "verify",
     "path": "/verify",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\verify\\\\index.vue",
-    "chunkName": "pages/verify/index"
+    "chunkName": "pages/verify/index",
+    "_name": "_bf0110fe"
   },
   {
     "name": "address-add",
     "path": "/address/add",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\address\\\\add.vue",
-    "chunkName": "pages/address/add"
-  },
-  {
-    "name": "products-item",
-    "path": "/products/item",
-    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\products\\\\item.vue",
-    "chunkName": "pages/products/item"
+    "chunkName": "pages/address/add",
+    "_name": "_dd69add6"
   },
   {
     "name": "reviews-review",
     "path": "/reviews/review",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\reviews\\\\review.vue",
-    "chunkName": "pages/reviews/review"
+    "chunkName": "pages/reviews/review",
+    "_name": "_4a8f208a"
   },
   {
     "name": "verify-confirm",
     "path": "/verify/confirm",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\verify\\\\confirm.vue",
-    "chunkName": "pages/verify/confirm"
+    "chunkName": "pages/verify/confirm",
+    "_name": "_fc30b6a2"
   },
   {
     "name": "address-id",
     "path": "/address/:id",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\address\\\\_id.vue",
-    "chunkName": "pages/address/_id"
+    "chunkName": "pages/address/_id",
+    "_name": "_3006edae"
+  },
+  {
+    "name": "products-item",
+    "path": "/products/:item?",
+    "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\products\\\\_item.vue",
+    "chunkName": "pages/products/_item",
+    "_name": "_85b0e654"
   },
   {
     "name": "index",
     "path": "/",
     "component": "G:\\\\Deployment of Ecom\\\\EcommerceStore\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_438aa11a"
   }
 ]

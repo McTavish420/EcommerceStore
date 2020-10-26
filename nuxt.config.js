@@ -15,9 +15,10 @@ export default {
       '/verify/confirm',
       '/verify',
       '/reviews/review',
-      // '/products/item',
+      // '/products/_item',
       {
-        path: '/products/item?item=:id'
+        path: '/products/:item?',
+        component: 'pages/products/_item.vue'
       },
       '/address/_id',
       '/address/add',

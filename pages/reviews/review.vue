@@ -149,7 +149,7 @@ export default {
         let response = await this.$axios.$post(`${process.env.DEV_BACKEND}/api/review/${this.$route.query.art}`, data)
 
         if (response.success) {
-          this.$router.push({path: `/products/item`, query:{ item: this.$route.query.art } })
+          this.$router.push({path: `/products/${this.$route.query.art}`})
         }
       } catch (error) {
         console.log(error);
