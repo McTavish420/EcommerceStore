@@ -110,9 +110,9 @@ export default {
   components: {
     StarRating: rating.StarRating
   },
-  async asyncData ({ $axios, params }) {
+  async asyncData ({ $axios, route }) {
     try {
-      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${params.review}`)
+      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.params.review}`)
 
       return {
         product: response.product

@@ -194,10 +194,10 @@
 <script>
 export default {
   middleware: 'auth',
-  async asyncData ({ $axios, params }) {
+  async asyncData ({ $axios, route }) {
     try {
       let getCountries = $axios.$get(`${process.env.DEV_BACKEND}/api/addresses/get/countries`)
-      let getAddress = $axios.$get(`${process.env.DEV_BACKEND}/api/addresses/${params.id}`)
+      let getAddress = $axios.$get(`${process.env.DEV_BACKEND}/api/addresses/${route.params.id}`)
 
       let [countriesResponse, 
              addressResponse] = await Promise.all([
@@ -224,17 +224,7 @@ export default {
       phoneNumber: '',
       deliveryInstructions: '',
       securityCode: '',
-      address: {
-        country: 'Japan',
-      fullName: '',
-      streetAddress: '',
-      city: '',
-      state: '',
-      zipCode: '',
-      phoneNumber: '',
-      deliveryInstructions: '',
-      securityCode: ''
-      }
+      address: {}
     }
   },
   

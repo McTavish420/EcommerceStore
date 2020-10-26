@@ -8,16 +8,7 @@ const dynamicRoutes = async () => {
       payload: product
     }
   })
-  const routesForReview = resPorducts.data.map(product => {
-    return {
-      route: `/reviews/${product._id}`,
-      payload: product
-    }
-  })
-  return {
-    routesForProducts, 
-    routesForReview
-   }
+  return routesForProducts
 }
 export default {
   ssr: true,
@@ -83,10 +74,11 @@ export default {
       //   path: '/reviews/:review?',
       //   component: 'pages/reviews/_review.vue'
       // },
-      {
-        path: '/address/:id?',
-        component: 'pages/address/_id.vue'
-      },
+      '/reviews/_review',
+      // {
+      //   path: '/address/:id?',
+      //   component: 'pages/address/_id.vue'
+      // },
       {
         path: '/address',
         component: 'pages/address/index.vue'
@@ -94,8 +86,8 @@ export default {
       {
         path: '/address/add',
         component: 'pages/address/add.vue'
-      }
-      // '/address/_id',
+      },
+      '/address/_id',
       // '/address/add',
       // '/address'
     ],

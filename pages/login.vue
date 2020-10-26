@@ -14,12 +14,12 @@
 
                 <!-- Email Field -->
                 <div class="a-row a-spacing-base">
-                  <label for="ap_customer_name" class="a-form-label"
+                  <label for="ap_customer_email" class="a-form-label"
                     >Email</label
                   >
                   <input
                     type="email"
-                    id="ap_customer_name"
+                    id="ap_customer_email"
                     class="a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info"
                     v-model="email"
                   />
@@ -35,12 +35,12 @@
 
                 <!-- Password Field -->
                 <div class="a-row a-spacing-base">
-                  <label for="ap_customer_name" class="a-form-label"
+                  <label for="ap_customer_password" class="a-form-label"
                     >Password</label
                   >
                   <input
                     type="password"
-                    id="ap_customer_name"
+                    id="ap_customer_password"
                     class="a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info"
                     v-model="password"
                   />
