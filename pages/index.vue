@@ -7,7 +7,7 @@
 
       <!-- Main Contents -->
       <div class="col-xl-10 col-lg-9 md-8 col-sm-8 mx-auto">
-        <FeaturedProduct></FeaturedProduct>
+        <FeaturedProduct :products="products"></FeaturedProduct>
 
         <div class="mainResults">
           <ul class="s-result-list">
