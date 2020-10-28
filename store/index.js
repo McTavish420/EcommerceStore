@@ -8,7 +8,9 @@ export const state = () => ({
     userName: '',
     city: '',
     user: '',
-    logStatus: false
+    logStatus: false,
+    product: '',
+    reviews: ''
 })
 
 // Actions
@@ -146,6 +148,16 @@ export const mutations = {
         state.city = '',
         state.user = ''
         state.logStatus = false
+    },
+    
+    setProduct (state, data) {
+        state.product = data
+        console.log('inside store product:\n', state.product);
+    },
+
+    setReviews(state, data) {
+        state.reviews = data
+        console.log('inside store reviews:\n', state.product);
     }
 
 }
@@ -196,6 +208,14 @@ export const getters = {
 
     getLog(state) {
         return state.logStatus
+    },
+
+    getProduct (state) {
+        return state.product
+    },
+
+    getReviews(state) {
+        return state.reviews
     }
 
     

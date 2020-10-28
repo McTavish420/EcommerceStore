@@ -113,6 +113,7 @@ export default {
   async asyncData ({ $axios, route }) {
     try {
       let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.params.review}`)
+      console.log('inside async Data:\n', response.product);
 
       return {
         product: response.product

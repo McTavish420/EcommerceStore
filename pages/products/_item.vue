@@ -375,25 +375,14 @@ export default {
     ReviewSection,
     StarRating: rating.StarRating
   },
-  beforeRouteEnter (to, from, next) {
-    console.log('bofore enter:\t', from);
-    console.log('after enter:\t', to);
-    next()
-  },
-   beforeMount() {
-    window.addEventListener("beforeunload", event => {
-      this.reload()
-      console.log("route from beforemount:\t", this.$route);
-    })
-  },
-  async asyncData ({ $axios, route }) {
+  async asyncData ({ $axios, route, store }) {
     try {
       let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.params.item}`)
       let manyReviews = $axios.$get(`${process.env.DEV_BACKEND}/api/review/${route.params.item}`)
       let shipments = $axios.$post(`${process.env.DEV_BACKEND}/api/payment/shipment`, {
         shipment: 'normal'
       })
-      console.log('async route', route);
+
       const [productResponse, 
              reviewResponse, 
              shipmentResponse] = await Promise.all([
@@ -402,7 +391,9 @@ export default {
                shipments
              ])
             //  console.log('average rateing:\t', productResponse.product.averageRating);
-            console.log('Reviews from asyncData:\n', reviewResponse.reviews);
+            // console.log('Reviews from asyncData:\n', reviewResponse.reviews);
+      store.commit('setProduct', productResponse.product)
+      store.commit('setReviews', reviewResponse.reviews)
       return {
         product: productResponse.product,
         reviews: reviewResponse.reviews,
@@ -434,21 +425,16 @@ export default {
       estimatedDelivery: {},
     }
   },
+  async beforeCreate() {
+    this.product = this.$store.getters.getProduct
+    this.reviews = this.$store.getters.getReviews
+    console.log('Before Create:\n', this.reviews);
+  },
 
   methods: {
     ...mapActions(['addProductToCart']),
     ...mapGetters(['getLog', 'getCity']),
-    reload () {
-      console.log("route:\t", this.$route.params);
-      // this.$router.push({
-      //   path: `/products/${this.$route.params.item}`,
-      //   params: {
-      //     item: this.$route.params.item
-      //   }
-      // })
-      this.$router.push(`/products/${this.$route.params.item}`)
-    }
-  },
+  }
 }
 </script>
 
