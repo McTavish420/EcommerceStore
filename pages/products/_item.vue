@@ -375,6 +375,13 @@ export default {
     ReviewSection,
     StarRating: rating.StarRating
   },
+  beforeRouteEnter (to, from, next) {
+    if (from.name === null) {
+      next('/')
+    } else {
+      next()
+    }
+  },
   async asyncData ({ $axios, route, store }) {
     try {
       let singleProduct = $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.params.item}`)
