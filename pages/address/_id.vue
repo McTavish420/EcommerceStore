@@ -194,6 +194,13 @@
 <script>
 export default {
   middleware: 'auth',
+  beforeRouteEnter (to, from, next) {
+    if (from.name === null) {
+      next('/')
+    } else {
+      next()
+    }
+  },
   async asyncData ({ $axios, route }) {
     try {
       let getCountries = $axios.$get(`${process.env.DEV_BACKEND}/api/addresses/get/countries`)

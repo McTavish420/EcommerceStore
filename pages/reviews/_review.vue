@@ -110,6 +110,13 @@ export default {
   components: {
     StarRating: rating.StarRating
   },
+  beforeRouteEnter (to, from, next) {
+    if (from.name === null) {
+      next('/')
+    } else {
+      next()
+    }
+  },
   async asyncData ({ $axios, route }) {
     try {
       let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.params.review}`)
