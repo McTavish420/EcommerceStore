@@ -397,7 +397,8 @@ export default {
       return {
         product: productResponse.product,
         reviews: reviewResponse.reviews,
-        estimatedDelivery: shipmentResponse.shipment.estimated
+        estimatedDelivery: shipmentResponse.shipment.estimated,
+        isReload: true
       }
     } catch (error) {
       console.log('something went wrong');
@@ -423,12 +424,15 @@ export default {
       },
       reviews: [],
       estimatedDelivery: {},
+      isReload: false
     }
   },
   async beforeCreate() {
-    this.product = this.$store.getters.getProduct
-    this.reviews = this.$store.getters.getReviews
-    console.log('Before Create:\n', this.reviews);
+    if (!this.isReload) {
+      this.product = this.$store.getters.getProduct
+      this.reviews = this.$store.getters.getReviews
+      console.log('Before Create:\n', this.reviews);
+    }
   },
 
   methods: {
