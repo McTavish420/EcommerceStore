@@ -77,7 +77,7 @@
                         <div class="nav-tools">
                             <a href="#" id="icp-nav-floyout" 
                             class="nav-a nav-a-2 icp-link-style-2">
-                            <span class="icp-nav-link-inner">
+                            <!-- <span class="icp-nav-link-inner">
                                 <span class="nav-line-1">
                                     <span class="icp-nav-globe-img-2"></span>
                                     <span class="icp-nav-language">EN</span>
@@ -88,7 +88,7 @@
                                     <span class="nav-icon nav-arrow" 
                                       style="visibility: visible"></span>
                                 </span>
-                            </span>
+                            </span> -->
                             </a>
                             <span class="icp-nav-link-border"></span>
 
