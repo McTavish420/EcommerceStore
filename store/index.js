@@ -1,3 +1,4 @@
+
 // State
 export const state = () => ({
     // state
@@ -48,6 +49,17 @@ export const actions = {
 
     clearUser ({state, commit}) {
         commit('remove')
+    },
+
+    async singleProduct({commit}, params) {
+        try {
+            let response = await this.$axios.$get(`${process.env.DEV_BACKEND}/api/products/${params}`)
+            // console.log('inside Store Product:\n', response.product);
+
+            commit('setProduct', response.product)
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     
@@ -152,13 +164,13 @@ export const mutations = {
     
     setProduct (state, data) {
         state.product = data
-        console.log('inside store product:\n', state.product);
+        // console.log('inside store product:\n', state.product);
     },
 
     setReviews(state, data) {
         state.reviews = data
-        console.log('inside store reviews:\n', state.product);
-    }
+        // console.log('inside store reviews:\n', state.reviews);
+    },
 
 }
 

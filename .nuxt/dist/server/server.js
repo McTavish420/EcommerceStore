@@ -1225,6 +1225,18 @@ const actions = {
     commit
   }) {
     commit('remove');
+  },
+
+  async singleProduct({
+    commit
+  }, params) {
+    try {
+      let response = await this.$axios.$get(`${"https://ecommstore2019.herokuapp.com"}/api/products/${params}`); // console.log('inside Store Product:\n', response.product);
+
+      commit('setProduct', response.product);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
 }; // Mutations
@@ -1329,13 +1341,11 @@ const mutations = {
   },
 
   setProduct(state, data) {
-    state.product = data;
-    console.log('inside store product:\n', state.product);
+    state.product = data; // console.log('inside store product:\n', state.product);
   },
 
   setReviews(state, data) {
-    state.reviews = data;
-    console.log('inside store reviews:\n', state.product);
+    state.reviews = data; // console.log('inside store reviews:\n', state.reviews);
   }
 
 }; // Getters

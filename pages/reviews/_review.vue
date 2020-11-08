@@ -9,12 +9,12 @@
           <div class="col-sm-8">
             <div class="a-spacing-top-medium">
               <h2 class="a-spacing-base">
-                <b>Create Review</b> for <b>{{ product.title }}</b>
+                <b>Create Review</b> for <b>{{ $store.getters.getProduct.title }}</b>
               </h2>
               <div class="row">
                 <!-- Product Photo -->
                 <div class="col-md-4 col-sm-3 col-3">
-                  <img :src="product.photo" style="width: 100%; border-radius: 5px" />
+                  <img :src="$store.getters.getProduct.photo" style="width: 100%; border-radius: 5px" />
                 </div>
               </div>
               <div class="a-spacing-top-medium"></div>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="media-body pl-3 pt-2">
                   <input type="text" class="a-input-text" style="width: 100%;"  disabled
-                   :value="$auth.$state.user.userName"/>
+                   :value="$store.getters.getUser.userName"/>
                 </div>
               </div>
             </div>
@@ -110,24 +110,25 @@ export default {
   components: {
     StarRating: rating.StarRating
   },
+  fetch ({ store, params }) {
+  // console.log('inside page params fetch:\t', params);
+  return store.dispatch('singleProduct', params.review)
+},
   beforeRouteEnter (to, from, next) {
+    console.log('before from:\t', from);
     if (from.name === null) {
-      next('/')
+      next(vm => {
+        // console.log('before enter: ', to.path);
+        // vm.$router.push(`${to.path.toString()}`)
+        vm.$store.dispatch('singleProduct', to.params.review)
+      })
     } else {
       next()
     }
   },
-  async asyncData ({ $axios, route }) {
-    try {
-      let response = await $axios.$get(`${process.env.DEV_BACKEND}/api/products/${route.params.review}`)
-      console.log('inside async Data:\n', response.product);
-
-      return {
-        product: response.product
-      }
-    } catch (error) {
-      console.log(error);
-    }
+  async asyncData ({ store, params }) {
+    // console.log('inside page params async:\t', params);
+  await store.dispatch('singleProduct', params.review)
   },
 
   data () {
